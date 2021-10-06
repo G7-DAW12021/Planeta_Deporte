@@ -1,5 +1,5 @@
 
-Header para usuarios registrados
+Header para usuarios registrados (de panel de administracion)
 
 <header class="register_header">
          <img class="header_logo" title="Company Logo" alt="Company Logo" src="imgk/logo.png">
