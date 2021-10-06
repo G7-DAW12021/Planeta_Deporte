@@ -1,3 +1,6 @@
+
+Header para usuarios registrados
+
 <header class="register_header">
          <img class="header_logo" title="Company Logo" alt="Company Logo" src="imgk/logo.png">
                 <nav>
