@@ -4,11 +4,11 @@
         <head>
                 <meta charset="utf-8">
                 <link rel="stylesheet" type="text/css" href="style/style.css" media="screen">
-                <title>Crear Noticia</title> 
+                <title>Crear Noticia: Redactor</title> 
         </head>
 
 
-        <header class="register_header">
+        <header class="admin_register_header">
                 <img class="header_logo" title="Company Logo" alt="Company Logo" src="imgk/logo.png">
                 <nav>
                         <a class="header_links" href=""> Futbol</a>
@@ -41,12 +41,20 @@
 
             
 
-            <form id="create_new" method="get">
+            <form id="create_new" method="POST">
                 <label>Autor:&nbsp;<input type="text" required /></label><br/>
                 <label>Fecha:&nbsp;<input type="text" required /></label><br/>
                 <label>Titulo:&nbsp;<input type="text" required /></label><br/>
                 <label>Subtitulo:&nbsp;<input type="text" required/></label><br>
-                <label>Seccion:&nbsp;<input type="text" required/></label><br>
+                <label>Seccion:&nbsp;</label>
+                <select class="sections_select" >
+                        <option value="Fútbol">Fútbol</option>
+                        <option value="Baloncesto">Baloncesto</option>
+                        <option value="Tenis">Tenis</option>
+                        <option value="Ciclismo">Ciclismo</option>
+                        <option value="Motor">Motor</option>
+                        <option value="eSports">eSports</option>
+                </select><br>
                 <textarea id="create_new_description_area"> Descripcion</textarea><br>
                 <input type="submit" value="Publicar"/>
                 <input type="submit" value="Borrar"/>
