@@ -1,7 +1,4 @@
-
-
-
-Añadir en todos: 
+Añadir en todos en el <head>: 
  <link rel="stylesheet" type="text/css" href="style/header_style.css" media="screen">
 
 
@@ -17,13 +14,9 @@ Añadir en todos:
                         <a class="motor_links" href=""> Motor</a>
                         <a class="eSports_links" href=""> eSports</a>
                         <a class="contact_links" href=""> Contacto</a>
-                </nav>
-
-                <div class="div_user">
-                        <div class="btn_bg"><a class="header_profile_text">Pepe Moreno Pérez</a></div>
-                </div>
-
-                <nav>
+                        <div class="div_user">
+                                <div class="btn_bg"><a class="header_profile_text" href="">Pepe Moreno Pérez</a></div>
+                        </div>
                         <a href=""><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile-img.png"></a>
                 </nav>
 </header>
@@ -33,7 +26,28 @@ Añadir en todos:
 
 
 
-    <header class="register_header">
+<header class="register_header">
+        <img class="header_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+        <nav>
+                <a class="football_links" href=""> Futbol</a>
+                <a class="basket_links" href=""> Baloncesto</a>
+                <a class="tennis_links" href=""> Tenis</a>
+                <a class="cycling_links" href=""> Ciclismo</a>
+                <a class="motor_links" href=""> Motor</a>
+                <a class="eSports_links" href=""> eSports</a>
+                <img class="header_glass_img" title="glass" alt="glass" src="img/logo-glass.png">
+                <a class="contact_links_V2" href=""> Contacto</a>
+                <div class="div_btns">
+                    <div class="actions_btn_bg"><a class="btn_texts" href="">Cerrar Sesión</a></div>
+                </div>
+                <a href=""><img class="header_profile_img_V2" title="Profile" alt="Profile" src="img/profile-img.png"></a>
+        </nav>
+</header>
+
+
+############################################ Header Usuario No Registrado ###############################################################
+
+<header class="non_register_header">
         <img class="header_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
         <nav>
                 <a class="football_links" href=""> Futbol</a>
@@ -45,20 +59,27 @@ Añadir en todos:
                 <img class="header_glass_img" title="glass" alt="glass" src="img/logo-glass.png">
                 <a class="contact_links_V2" href=""> Contacto</a>
         </nav>
-
-        <div class="div_btns">
-                <div class="actions_btn_bg"><a class="btn_texts">Cerrar Sesión</a></div>
+        <div class="div_btns_V2">
+                <div class="actions_btn_bg"><a class="btn_texts" href="">Iniciar Sesión</a></div>
         </div>
-
-        <nav>
-                <a href=""><img class="header_profile_img_V2" title="Profile" alt="Profile" src="img/profile-img.png"></a>
-        </nav>
-    </header>
-
-
-
-############################################ Header Usuario No Registrado ###############################################################
-
-
+        <div class="div_btns_V3">
+            <div class="actions_btn_bg"><a class="btn_texts" href="">Registrarse</a></div>
+        </div>
+</header>
 
 ############################################ Header Login/Registrarse ###################################################################
+
+<header class="login_register_header">
+        <img class="header_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+        <nav>
+                <a class="football_links" href=""> Futbol</a>
+                <a class="basket_links" href=""> Baloncesto</a>
+                <a class="tennis_links" href=""> Tenis</a>
+                <a class="cycling_links" href=""> Ciclismo</a>
+                <a class="motor_links" href=""> Motor</a>
+                <a class="eSports_links" href=""> eSports</a>
+                <a class="contact_links" href=""> Contacto</a>
+        </nav>
+</header>
+
+
