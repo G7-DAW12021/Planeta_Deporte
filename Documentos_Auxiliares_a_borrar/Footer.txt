@@ -8,8 +8,10 @@ Añadir siguiente línea en el head
 <footer class="footers">
             <pre class="rights_text">Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
             <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
-            <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/logo-facebook.png">
-            <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/logo-instagram.png">
-            <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/logo-twitter.png">
-            <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/logo-youtube.png">
+            <div class="social_network">
+                 <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
+                 <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/Instagram.png">
+                 <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/Twitter.png">
+                 <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/Youtube.png">
+             </div> 
 </footer>
