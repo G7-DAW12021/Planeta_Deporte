@@ -5,72 +5,86 @@
                 <meta charset="utf-8">
                 <link rel="stylesheet" type="text/css" href="style/header_style.css" media="screen">
                 <link rel="stylesheet" type="text/css" href="style/footer_style.css" media="screen">
+                <link rel="stylesheet" type="text/css" href="style/sidebar_style.css" media="screen">
+                <link rel="stylesheet" type="text/css" href="style/breadcrumbs_style.css" media="screen">
                 <title>Crear Noticia: Administrador </title> 
         </head>
 
-
-        <header class="admin_register_header">
-                <img class="header_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
-                <nav>
-                        <a class="football_links" href=""> Futbol</a>
-                        <a class="basket_links" href=""> Baloncesto</a>
-                        <a class="tennis_links" href=""> Tenis</a>
-                        <a class="cycling_links" href=""> Ciclismo</a>
-                        <a class="motor_links" href=""> Motor</a>
-                        <a class="eSports_links" href=""> eSports</a>
-                        <a class="contact_links" href=""> Contacto</a>
-                        <div class="div_user">
-                                <div class="btn_bg"><a class="header_profile_text" href="">Pepe Moreno Pérez</a></div>
-                        </div>
-                        <a href=""><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile-img.png"></a>
-                </nav>
-        </header>
+        <body>
+                <header class="headers">
+                        <img class="header_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+                        <nav class="nav_header">
+                                <div class="header_links">
+                                    <a class="football_links" href=""> Futbol</a>
+                                    <a class="basket_links" href=""> Baloncesto</a>
+                                    <a class="tennis_links" href=""> Tenis</a>
+                                    <a class="cycling_links" href=""> Ciclismo</a>
+                                    <a class="motor_links" href=""> Motor</a>
+                                    <a class="eSports_links" href=""> eSports</a>
+                                    <a class="contact_links" href=""> Contacto</a>
+                                </div>
+                        
+                                <div class="div_user">
+                                    <a class="header_profile_text" href="">Pepe Moreno Pérez</a>
+                                    <a href=""><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile-img.png"></a>
+                                </div>
+                        </nav>
+                </header>
         
-        <nav class="sidebar_admin_panel">
-                <img class="sidebar_logos" title="Home" alt="Home" src="">
-                <a class="sidebar_links" href=""> Home</a>
-                <img class="sidebar_logos" title="Users" alt="Users" src="">
-                <a class="sidebar_links" href=""> Usuarios</a>
-                <img class="sidebar_logos" title="Content" alt="Content" src="">
-                <a class="sidebar_links" href=""> Contenido</a>
-                <img class="sidebar_logos" title="Comments" alt="Comments" src="">
-                <a class="sidebar_links" href=""> Comentarios</a>
-        </nav>
+                <nav class="sidebar_admin_panel">
+                        <ul class="nav_list">
+                                <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/logo-home.png">
+                                    <a class="sidebar_links" href=""> Home</a>
+                                </li>
+                                <li class="nav_items"><img class="sidebar_logos" title="Users" alt="Users" src="img/logo-users.png">
+                                    <a class="sidebar_links" href=""> Usuarios</a>
+                                </li>
+                                <li class="nav_items"><img class="sidebar_logos" title="Content" alt="Content" src="img/logo-content.png">
+                                <a class="sidebar_links" href=""> Contenido</a>
+                                </li>
+                                <li class="nav_items"><img class="sidebar_logos" title="Comments" alt="Comments" src="img/logo-comment.png">
+                                    <a class="sidebar_links" href=""> Comentarios</a>
+                                </li>
+                        </ul>
+                </nav>
 
-        <section>
-            <header>
-                <h2 class="sub_headers"> Crear notica </h2>
-            </header>
+                <section>
+                        <header class="sub_headers">
+                                <h2 class="sub_headers_title"> Crear Noticia </h2>
+                        </header>
 
-            <form id="create_new" method="POST">
-                <label>Autor:&nbsp;<input type="text" required /></label><br/>
-                <label>Fecha:&nbsp;<input type="text" required /></label><br/>
-                <label>Titulo:&nbsp;<input type="text" required /></label><br/>
-                <label>Subtitulo:&nbsp;<input type="text" required/></label><br>
-                <label>Seccion:&nbsp;</label>
-                <select class="sections_select" >
-                        <option value="Fútbol">Fútbol</option>
-                        <option value="Baloncesto">Baloncesto</option>
-                        <option value="Tenis">Tenis</option>
-                        <option value="Ciclismo">Ciclismo</option>
-                        <option value="Motor">Motor</option>
-                        <option value="eSports">eSports</option>
-                </select><br>
-                <textarea id="create_new_description_area"> Descripcion</textarea><br>
-                <input type="submit" value="Publicar"/>
-                <input type="submit" value="Borrar"/>
-            </form>
-        </section>
+                        <form id="create_new" method="POST">
+                                <label>Autor:&nbsp;<input type="text" required /></label><br/>
+                                <label>Fecha:&nbsp;<input type="text" required /></label><br/>
+                                <label>Titulo:&nbsp;<input type="text" required /></label><br/>
+                                <label>Subtitulo:&nbsp;<input type="text" required/></label><br>
+                                <label>Seccion:&nbsp;</label>
+                                <select class="sections_select" >
+                                        <option value="Fútbol">Fútbol</option>
+                                        <option value="Baloncesto">Baloncesto</option>
+                                        <option value="Tenis">Tenis</option>
+                                        <option value="Ciclismo">Ciclismo</option>
+                                        <option value="Motor">Motor</option>
+                                        <option value="eSports">eSports</option>
+                                </select><br>
+                                <textarea id="create_new_description_area"> Descripcion</textarea><br>
+                                <input type="submit" value="Publicar"/>
+                                <input type="submit" value="Borrar"/>
+                        </form>
+                </section>
 
 
 
-        <footer class="footers">
-                <pre class="rights_text">Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
-                <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
-                <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/logo-facebook.png">
-                <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/logo-instagram.png">
-                <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/logo-twitter.png">
-                <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/logo-youtube.png">
-        </footer>
+                <footer class="footers">
+                        <pre class="rights_text">Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
+                        <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
+                        <div class="social_network">
+                             <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/logo-facebook.png">
+                             <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/logo-instagram.png">
+                             <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/logo-twitter.png">
+                             <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/logo-youtube.png">
+                        </div> 
+                </footer>
+        </body>
 
 </html>
