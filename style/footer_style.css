@@ -1,10 +1,11 @@
-
 /*-------------------------------------------------------Footer Style------------------------------------------------------*/
 /* Footer */
 .footers {
     padding: 0.1%;
     margin: 1% -1% -1% -1%;
     background: #3F3F3F;
+    position: relative;
+    clear:both;
 }
 
 /* Text: Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados. */
