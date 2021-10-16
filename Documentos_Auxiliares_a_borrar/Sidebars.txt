@@ -1,0 +1,61 @@
+
+
+Añadir al head la siguiente línea:
+
+<link rel="stylesheet" type="text/css" href="style/sidebar_style.css" media="screen">
+
+
+
+NOTA: AÑADIR O ELIMINAR LOS ICONOS Y LINKS CORRESPONDIENTES A CADA PÁGINA
+
+
+
+
+############################### Versión que llega hasta header de administrador #####################
+<nav class="sidebar_admin_panel">
+                        <ul class="nav_list">
+                                <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/logo-home.png">
+                                    <a class="sidebar_links" href=""> Home</a>
+                                </li>
+                                <li class="nav_items"><img class="sidebar_logos" title="Users" alt="Users" src="img/logo-users.png">
+                                    <a class="sidebar_links" href=""> Usuarios</a>
+                                </li>
+                                <li class="nav_items"><img class="sidebar_logos" title="Content" alt="Content" src="img/logo-content.png">
+                                <a class="sidebar_links" href=""> Contenido</a>
+                                </li>
+                                <li class="nav_items"><img class="sidebar_logos" title="Comments" alt="Comments" src="img/logo-comment.png">
+                                    <a class="sidebar_links" href=""> Comentarios</a>
+                                </li>
+                        </ul>
+</nav>
+
+
+
+############################### Versión que llega hasta header de redactor #####################
+
+<nav class="sidebar_writer_panel">
+                        <ul class="nav_list">
+                                <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/logo-home.png">
+                                    <a class="sidebar_links" href=""> Home</a>
+                                </li>
+                                <li class="nav_items"><img class="sidebar_logos" title="Content" alt="Content" src="img/logo-content.png">
+                                <a class="sidebar_links" href=""> Contenido</a>
+                                </li>
+                                <li class="nav_items"><img class="sidebar_logos" title="Comments" alt="Comments" src="img/logo-comment.png">
+                                    <a class="sidebar_links" href=""> Comentarios</a>
+                                </li>
+                        </ul>
+</nav>
+
+
+
+
+############################## Versión que llega hasta migas de pan (solo home) #################
+
+<nav class="sidebar_home_panel">
+            <ul class="nav_list">
+                    <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/logo-home.png">
+                        <a class="sidebar_links" href=""> Home</a>
+                    </li>
+            </ul>
+</nav>
