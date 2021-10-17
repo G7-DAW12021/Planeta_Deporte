@@ -2,94 +2,132 @@
 <html lang="es">
 
     <head>
-            <meta charset="utf-8">
-            <link rel="stylesheet" type="text/css" href="style/style.css" media="screen">
-            <title>Noticia</title> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style/footer_style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style/header_style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style/breadcrumbs_style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style/sidebar_style.css" media="screen">
+        <title>Noticia</title> 
     </head>
 
-    <header class="non_register_header">
-            <img class="header_logo" title="Company Logo" alt="Company Logo" src="imgk/logo.png">
-            <nav>
-                <a class="header_links" href=""> Futbol</a>
-                <a class="header_links" href=""> Baloncesto</a>
-                <a class="header_links" href=""> Tenis</a>
-                <a class="header_links" href=""> Ciclismo</a>
-                <a class="header_links" href=""> Motor</a>
-                <a class="header_links" href=""> eSports</a>
-                <img class="header_glass_img" title="glass" alt="glass" src="imgk/glass.png">
-                <a class="header_links" href=""> Contacto</a>
-                <a class="header_links" href=""> Iniciar Sesión</a>
-                <a class="header_links" href=""> Registrarse</a>
+    <body>
+        <header class="headers">
+            <img class="header_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+            <nav class="nav_register_header">
+                <div class="register_header_links">
+                    <a class="football_links" href=""> Futbol</a>
+                    <a class="basket_links" href=""> Baloncesto</a>
+                    <a class="tennis_links" href=""> Tenis</a>
+                    <a class="cycling_links" href=""> Ciclismo</a>
+                    <a class="motor_links" href=""> Motor</a>
+                    <a class="eSports_links" href=""> eSports</a>
+                    <a class="glass_links" href=""><img class="header_glass_img" title="glass" alt="glass" src="img/logo-glass.png"></a>
+                    <a class="contact_links" href=""> Contacto</a>
+                </div>
+                <div class="div_btns">
+                    <a class="login_register_btn" href="">Iniciar Sesión</a>
+                    <a class="login_register_btn" href="">Registrarse</a>
+                </div>
             </nav>
-    </header>
+        </header>
 
-    <nav class="sidebar_user_panel">
-        <img class="sidebar_logos" title="Home" alt="Home" src="img/home.jpg">
-        <a class="sidebar_links" href="home.html"> Home</a>
-    </nav>
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_items">
+                    <a class="breadcrumbs_links" href=""> Home </a>
+                </li>
 
-    <header class="nav_sub_header"> 
-        <h2 class="sub_headers"> Home>>Futbol>>El Barca no pierde la fe</h2>
-    </header>
+                <li class="breadcrumbs_list_items">
+                    <img  title="Beak" alt="Beak" src="img/logo-beak.png">
+                </li>
 
-    <section id="barca_new">
-        <img class="new" title="quique" alt="quique" src="img/quique.jpg">
-        <header>
-            <h1>Quique Sánchez Flores: "Michel es mi amigo, hablé con él y nos deseamos lo mejor"</h1><br>
-            <h3>Presentado como entrenador del Getafe, asegura que tiene que "hablar poco y trabajar mucho"</h3>
-        </header>
-        <img class="main_new" title="quique" alt="quique" src="img/quique.jpg">
-        <pre>Antonio Jimenez                 Actualizado <time>28/09/2021 13:00</time></pre>
-        <p>"Veo mucho fútbol todos los fines de semana y no es el momento de hablar de lo que hace uno y otro. 
-        Tengo una gran amistad con Miguel (Michel) de hace tiempo y he hablado con él, nos hemos deseado suerte".
-        "Es respetuoso con los entrenadores, de los pocos que he conocido así, y sé lo que le duele tomar estas 
-        decisiones durante la temporada. Se ha tomado su tiempo y cuando ya ha cambiado de entrenador, yo tengo poco que decir".
-        </p>
-    </section>
-    <article id="author_biography">
-        <img class="writer_photo" title="Writer photo" alt="Writer photo" src="imgk/logo.png">
-        <header>
-            <h3>Antonio Jimenez</h3>
-        </header>
-        <p>Nací hará hoy treinta años, en un caluroso 3 de octubre de 1988, en la Maternidad de un hospital situado en la ciudad de Murcia.
-           Si bien el tercero y más joven de de mis hermanos, mi nacimiento fue también altamente deseado por mis padres. Los dos primeros 
-           años de mi vida fueron muy felices, rodeado de mi familia y empezando a descubrir el mundo que me rodeaba. Sin embargo durante el 
-           segundo de ellos mis padres recibieron una oferta de trabajo en Madrid, mudándonos todos a un piso cercano a la Puerta del Sol</p>
-    </article>
-    <article class="recommendations">
-        <header>
-            <h2>Te recomendamos</h2>
-        </header>
-        <img class="aside_news" title="irving" alt="irving" src="img/irving.jpg">
-        <header>
-            <h4>¡Bombazo en la NBA! Los Brooklyn Nets se cansan de Kyrie Irving y podrían prescindir de él esta misma temporada</h4>
-        </header>
-        <img class="aside_news" title="sr4" alt="sr4" src="img/sr4.jpg">
-        <header>
-            <h4>Pochettino: "Quizá la realidad de Sergio Ramos es otra que la de 2014"</h4>
-        </header>
-        <img class="aside_news" title="chiesa" alt="chiesa" src="img/chiesa.jpg">
-        <header>
-            <h4>Federico Chiesa, de querar dejarlo a los 13 años a ser la estrella de Italia</h4>
-        </header>
-    </article>
-    <article class="comments">
-        <header>
-            <h2>Comentarios</h2>
-        </header>
-        <img class="comentator_photo" title="Comentator photo" alt="Comentator photo" src="imgk/logo.png">
-        <header>
-            <h3>Pepito El Palotes</h3>
-        </header>
-        <p>Ojalá Quique tenga éxito en el Getafe, es muy buena persona</p>
-    </article>
+                <li class="breadcrumbs_list_items">
+                    <a class="breadcrumbs_links" href=""> Futbol </a>
+                </li>
 
-    <footer class="footers">
-        <pre>Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
-        <pre>Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
-        <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="imgk/logo-facebook.png">
-        <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="imgk/logo-instagram.png">
-        <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="imgk/logo-twitter.jpg">
-        <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="imgk/logo-youtube.jpg">
-    </footer>
+                <li class="breadcrumbs_list_items">
+                    <img  title="Beak" alt="Beak" src="img/logo-beak.png">
+                </li>
+
+                <li class="breadcrumbs_list_items">
+                    <a class="breadcrumbs_links" href=""> El Barca no pierde la Fe </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <nav class="sidebar_home_panel">
+            <ul class="nav_list">
+                    <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/logo-home.png">
+                        <a class="sidebar_links" href=""> Home</a>
+                    </li>
+            </ul>
+        </nav>
+
+        <section id="barca_new">
+            <img class="new" title="quique" alt="quique" src="img/quique.jpg">
+            <header>
+                <h1>Quique Sánchez Flores: "Michel es mi amigo, hablé con él y nos deseamos lo mejor"</h1><br>
+                <h3>Presentado como entrenador del Getafe, asegura que tiene que "hablar poco y trabajar mucho"</h3>
+            </header>
+            <img class="main_new" title="quique" alt="quique" src="img/quique.jpg">
+            <pre>Antonio Jimenez                 Actualizado <time>28/09/2021 13:00</time></pre>
+            <p>"Veo mucho fútbol todos los fines de semana y no es el momento de hablar de lo que hace uno y otro. 
+            Tengo una gran amistad con Miguel (Michel) de hace tiempo y he hablado con él, nos hemos deseado suerte".
+            "Es respetuoso con los entrenadores, de los pocos que he conocido así, y sé lo que le duele tomar estas 
+            decisiones durante la temporada. Se ha tomado su tiempo y cuando ya ha cambiado de entrenador, yo tengo poco que decir".
+            </p>
+        </section>
+        <article id="author_biography">
+            <img class="writer_photo" title="Writer photo" alt="Writer photo" src="imgk/logo.png">
+            <header>
+                <h3>Antonio Jimenez</h3>
+            </header>
+            <p>Nací hará hoy treinta años, en un caluroso 3 de octubre de 1988, en la Maternidad de un hospital situado en la ciudad de Murcia.
+            Si bien el tercero y más joven de de mis hermanos, mi nacimiento fue también altamente deseado por mis padres. Los dos primeros 
+            años de mi vida fueron muy felices, rodeado de mi familia y empezando a descubrir el mundo que me rodeaba. Sin embargo durante el 
+            segundo de ellos mis padres recibieron una oferta de trabajo en Madrid, mudándonos todos a un piso cercano a la Puerta del Sol</p>
+        </article>
+        <article class="recommendations">
+            <header>
+                <h2>Te recomendamos</h2>
+            </header>
+            <img class="aside_news" title="irving" alt="irving" src="img/irving.jpg">
+            <header>
+                <h4>¡Bombazo en la NBA! Los Brooklyn Nets se cansan de Kyrie Irving y podrían prescindir de él esta misma temporada</h4>
+            </header>
+            <img class="aside_news" title="sr4" alt="sr4" src="img/sr4.jpg">
+            <header>
+                <h4>Pochettino: "Quizá la realidad de Sergio Ramos es otra que la de 2014"</h4>
+            </header>
+            <img class="aside_news" title="chiesa" alt="chiesa" src="img/chiesa.jpg">
+            <header>
+                <h4>Federico Chiesa, de querar dejarlo a los 13 años a ser la estrella de Italia</h4>
+            </header>
+        </article>
+        <article class="comments">
+            <header>
+                <h2>Comentarios</h2>
+            </header>
+            <img class="comentator_photo" title="Comentator photo" alt="Comentator photo" src="imgk/logo.png">
+            <header>
+                <h3>Pepito El Palotes</h3>
+            </header>
+            <p>Ojalá Quique tenga éxito en el Getafe, es muy buena persona</p>
+        </article>
+
+
+        <footer class="footers">
+            <pre class="rights_text">Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
+            <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
+            <div class="social_network">
+                 <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/logo-facebook.png">
+                 <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/logo-instagram.png">
+                 <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/logo-twitter.png">
+                 <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/logo-youtube.png">
+             </div> 
+        </footer>
+    </body>
+ 
 </html>
