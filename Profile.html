@@ -1,57 +1,76 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8"/>
-    <title>Perfil</title>
-    <link href ="estilo.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-    <header class="register_header"> 
-        <img class="header_logo" title="Company Logo" alt="Company Logo" src="imgk/logo.png">
-        <nav>
-            <a class="header_links" href=""> Futbol</a>
-            <a class="header_links" href=""> Baloncesto</a>
-            <a class="header_links" href=""> Tenis</a>
-            <a class="header_links" href=""> Ciclismo</a>
-            <a class="header_links" href=""> Motor</a>
-            <a class="header_links" href=""> eSports</a>
-            <a class="header_links" href=""> Contacto</a>
-            <button name="favorito" type="button"> Cerrar Sesión</button>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Perfil</title>
+        <link rel="stylesheet" text="text/css" href="Estilos/style.css"/>
+        <link rel="stylesheet" type="text/css" href="Estilos/header_style.css"/>
+        <link rel="stylesheet" type="text/css" href="Estilos/footer_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="Estilos/breadcrumbs.css"/>
+        <link rel="stylesheet" type="text/css" href ="Estilos/menu.css"/>
+    </head>
+    <body>
+        <header class="headers">
+            <img class="header_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+            <nav class="nav_register_header">
+                <div class="register_header_links">
+                    <a class="football_links" href=""> Futbol</a>
+                    <a class="basket_links" href=""> Baloncesto</a>
+                    <a class="tennis_links" href=""> Tenis</a>
+                    <a class="cycling_links" href=""> Ciclismo</a>
+                    <a class="motor_links" href=""> Motor</a>
+                    <a class="eSports_links" href=""> eSports</a>
+                    <a class="contact_links" href=""> Contacto</a>
+                </div>
+                <div class="div_btns">
+                    <a class="actions_btn_bg" href="">Cerrar Sesión</a>
+                    <a href=""><img class="header_profile_img" title="Profile" alt="Profile" src="img/Perfil.png"></a>
+                </div>
+            </nav>
+        </header>
+        <nav class="sidebar_home_panel">
+            <ul class="nav_list">
+                    <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/Home.png">
+                        <a class="sidebar_links" href="">Home</a>
+                    </li>
+                    <li class="nav_items"><img class="sidebar_logos" title="Panel" alt="Panel" src="img/Panel.png">
+                        <a class="sidebar_links" href="">Panel</a>
+                    </li>
+            </ul>
         </nav>
-        <p class="header_profile">Pepe Moreno</p>
-        <img class="header_profile_img" title="Profile" alt="Profile" src="imgk/profile-img.png">
-    </header>
-    <nav class="sidebar_profile">
-        <img class="sidebar_logos" title="Home" alt="Home" src="">
-        <a class="sidebar_links" href="">Home</a>
-        <img class="sidebar_logos" title="Panel" alt="Panel" src="">
-        <a class="sidebar_links" href="">Panel</a>
-    </nav>
-    <section>
-        <div id ="photo_profile">
-            <img src="" alt=""/>
-            <button name="change_photo" type="button">Cambiar Foto</button>
-        </div>
-        <form id="Edit_Profile" method="POST">
-            <label>Nombre:&nbsp;<input type="text" required /></label><br/>
-            <button name="Edit_name" type="button"> Editar</button>
-            <button name="ok_name" type="button">ok<img src="" /></button>
-            <label>Apellidos:&nbsp;<input type="text" required /></label><br/>
-            <button name="Edit_Last_Name" type="button"> Editar</button>
-            <button name="ok_last_name" type="button">ok<img src="" /></button>
-            <label>Email:&nbsp;<input type="email" required/></label><br/>
-            <button name="Edit_email" type="button"> Editar</button>
-            <button name="ok_email" type="button">ok<img src="" /></button>
-            <label>Contraseña:&nbsp;<input type="password"required/></label><br/>
-            <button name="Edit_password" type="button"> Editar</button>
-            <button name="ok_password" type="button">ok<img src="" /></button>
-        </form>
-    </section>
-    <footer class="footers">
-        <pre>Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
-        <pre>Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
-        <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="imgk/logo-facebook.png">
-        <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="imgk/logo-instagram.png">
-        <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="imgk/logo-twitter.jpg">
-        <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="imgk/logo-youtube.jpg">
-    </footer>
-</body>
+        <section>
+            <div id ="photo_profile">
+                <img class="profile_img" title="Profile" alt="Profile" src="img/Perfil.png"><br/>
+                <button name="change_photo" type="button">Cambiar Foto</button>
+            </div>
+            <form id="Edit_Profile" method="POST">
+                <label>Nombre:&nbsp;<input type="text" required /></label>
+                <button class="button_edit" type="button"><img title="Edit" alt="Panel" src="img/Editar.png"></button>
+                <button class="button_delete" type="button"><img title="Edit" alt="Panel" src="img/Eliminar.png"></button>
+                <br/>
+                <label>Apellidos:&nbsp;<input type="text" required /></label>
+                <button class="button_edit" type="button"><img title="Edit" alt="Panel" src="img/Editar.png"></button>
+                <button class="button_delete" type="button"><img title="Edit" alt="Panel" src="img/Eliminar.png"></button>
+                <br/>
+                <label>Email:&nbsp;<input type="email" required/></label>
+                <button class="button_edit" type="button"><img title="Edit" alt="Panel" src="img/Editar.png"></button>
+                <button class="button_delete" type="button"><img title="Edit" alt="Panel" src="img/Eliminar.png"></button>
+                <br/>
+                <label>Contraseña:&nbsp;<input type="password"required/></label>
+                <button class="button_edit" type="button"><img title="Edit" alt="Panel" src="img/Editar.png"></button>
+                <button class="button_delete" type="button"><img title="Edit" alt="Panel" src="img/Eliminar.png"></button>
+                <br/>
+            </form>
+        </section>
+        <footer class="footers">
+            <pre class="rights_text">Septiembre 2021 Unidad Editorial Informaci&oacute;ón Deportiva, S.L.U. Todos los derechos reservados.</pre>
+            <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Ayuda        Nuestro equipo</pre>
+            <div class="social_network">
+                <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
+                <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/Instagram.png">
+                <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/Twitter.png">
+                <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/Youtube.png">
+            </div> 
+        </footer>
+    </body>
+</html>

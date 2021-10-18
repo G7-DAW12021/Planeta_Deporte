@@ -1,52 +1,72 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8"/>
-    <title>Registrarse</title>
-    <link href ="estilo.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-    <header class="register_login">
-        <img class="header_logo" title="Company Logo" alt="Company Logo" src="imgk/logo.png">
-        <nav>
-            <a class="header_links" href=""> Futbol</a>
-            <a class="header_links" href=""> Baloncesto</a>
-            <a class="header_links" href=""> Tenis</a>
-            <a class="header_links" href=""> Ciclismo</a>
-            <a class="header_links" href=""> Motor</a>
-            <a class="header_links" href=""> eSports</a>
-            <a class="header_links" href=""> Contacto</a>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Registrarse</title>
+        <link rel="stylesheet" text="text/css" href="Estilos/style.css"/>
+        <link rel="stylesheet" type="text/css" href="Estilos/header_style.css"/>
+        <link rel="stylesheet" type="text/css" href="Estilos/footer_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="Estilos/breadcrumbs.css"/>
+        <link rel="stylesheet" type="text/css" href ="Estilos/menu.css"/>
+    </head>
+    <body>
+        <header class="headers">
+            <img class="header_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+            <nav class="nav_header">
+                <div class="header_links">
+                        <a class="football_links" href=""> Futbol</a>
+                        <a class="basket_links" href=""> Baloncesto</a>
+                        <a class="tennis_links" href=""> Tenis</a>
+                        <a class="cycling_links" href=""> Ciclismo</a>
+                        <a class="motor_links" href=""> Motor</a>
+                        <a class="eSports_links" href=""> eSports</a>
+                        <a class="contact_links" href=""> Contacto</a>
+                </div>
+            </nav>
+        </header>
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_items">
+                    <a class="breadcrumbs_links" href="">Home</a>
+                </li>
+                <li class="breadcrumbs_list_items">
+                    <img  title="Beak" alt="Beak" src="img/beak.png">
+                </li>
+                <li class="breadcrumbs_list_items">
+                    <a class="breadcrumbs_links" href="">Registrarse</a>
+                </li>
+            </ul>
+        </nav> 
+        <nav class="sidebar_home_panel">
+            <ul class="nav_list">
+                    <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/Home.png">
+                        <a class="sidebar_links" href=""> Home</a>
+                    </li>
+            </ul>
         </nav>
-    </header>
-    <header>
-        <h2>Registarse</h2>
-    </header>
-
-    <nav class="sidebar_sign_up">
-        <img class="sidebar_logos" title="Home" alt="Home" src="">
-        <a class="sidebar_links" href=""> Home</a>
-    </nav>
-    <section>
-        <div id ="photo_profile">
-            <img src ="" alt=""/>
-            <button name="add_photo" type="button">Añadir Foto</button>
-        </div>
-        <form id="Sign_Up" method="POST">
-            <label>Nombre:&nbsp;<input type="text" required /></label><br/>
-            <label>Apellidos:&nbsp;<input type="text" required /></label><br/>
-            <label>Email:&nbsp;<input type="email" required/></label><br/>
-            <label>Contraseña:&nbsp;<input type="password"required/></label><br/>
-            <label>Repetir&nbsp;Contraseña:&nbsp;<input type="password"required/></label><br/>
-            <input type="submit" value="Registrar"/>
-        </form>
-    </section>
-
-
-    <footer class="footers">
-        <pre>Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
-        <pre>Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
-        <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="imgk/logo-facebook.png">
-        <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="imgk/logo-instagram.png">
-        <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="imgk/logo-twitter.jpg">
-        <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="imgk/logo-youtube.jpg">
-    </footer>
-</body>
+        <section>
+            <div id ="photo_profile">
+                <img src ="img/añadirImagen.png" alt="ñadir Foto"/>
+                <button name="add_photo" type="button">Añadir Foto</button>
+            </div>
+            <form id="Sign_Up" method="POST">
+                <label>Nombre:&nbsp;<input type="text" required /></label><br/>
+                <label>Apellidos:&nbsp;<input type="text" required /></label><br/>
+                <label>Email:&nbsp;<input type="email" required/></label><br/>
+                <label>Contraseña:&nbsp;<input type="password"required/></label><br/>
+                <label>Repetir&nbsp;Contraseña:&nbsp;<input type="password"required/></label><br/>
+                <input type="submit" value="Registrar"/>
+            </form>
+        </section>
+        <footer class="footers">
+            <pre class="rights_text">Septiembre 2021 Unidad Editorial Informaci&oacute;ón Deportiva, S.L.U. Todos los derechos reservados.</pre>
+            <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Ayuda        Nuestro equipo</pre>
+            <div class="social_network">
+                <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
+                <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/Instagram.png">
+                <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/Twitter.png">
+                <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/Youtube.png">
+            </div> 
+        </footer>
+    </body>
+</html>
