@@ -1,0 +1,42 @@
+.breadcrumbs {
+    background: #3F3F3F;
+    padding: 0.2%;
+}
+/*.breadcrumbs {
+    background: #3F3F3F;
+    // margin-top: 1%; 
+    // margin-left: -0.5%; 
+    // margin-right: -0.5%; 
+    padding: 0.2%;
+    // margin-bottom: -1%; 
+}*/
+.breadcrumbs_list {
+    list-style-type: none;
+}
+
+.breadcrumbs_list_items {
+    display: inline;
+}
+
+.breadcrumbs_links {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-family: cursive;
+}
+
+.sub_headers {
+    background: #3F3F3F;
+    margin-top: 1%;
+    margin-left: 7.7%;
+    margin-right: -0.5%;
+    padding: 0.2%;
+   
+}
+
+.sub_headers_title {
+    margin-left: 1.5%;
+    color: white;
+    font-size: normal;
+    font-family: cursive;
+}
