@@ -1,16 +1,18 @@
 .breadcrumbs {
     background: #3F3F3F;
-    margin-top: 1%;
-    margin-left: -0.5%;
-    margin-right: -0.5%;
     padding: 0.2%;
-    margin-bottom: -1%;
 }
-
+/*.breadcrumbs {
+    background: #3F3F3F;
+    // margin-top: 1%; 
+    // margin-left: -0.5%; 
+    // margin-right: -0.5%; 
+    padding: 0.2%;
+    // margin-bottom: -1%; 
+}*/
 .breadcrumbs_list {
     list-style-type: none;
 }
-
 
 .breadcrumbs_list_items {
     display: inline;
@@ -22,7 +24,6 @@
     font-size: x-large;
     font-family: cursive;
 }
-
 
 .sub_headers {
     background: #3F3F3F;
@@ -39,8 +40,6 @@
     font-size: normal;
     font-family: cursive;
 }
-
-
 .breadcrumbs_browser {
     background: #C4C4C4;
     border-radius: 30px;
