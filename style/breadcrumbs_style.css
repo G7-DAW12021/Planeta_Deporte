@@ -39,3 +39,15 @@
     font-size: normal;
     font-family: cursive;
 }
+
+
+.breadcrumbs_browser {
+    background: #C4C4C4;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+}
