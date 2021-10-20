@@ -7,7 +7,7 @@ Añadir siguiente línea en el head
 
 <footer class="footers">
             <pre class="rights_text">Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
-            <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
+            <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Contacto</pre>
             <div class="social_network">
                  <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
                  <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/Instagram.png">
