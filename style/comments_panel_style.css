@@ -1,0 +1,39 @@
+
+
+.comments_table {
+    margin-left: 8%;
+    margin-top: 1%;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+}
+
+
+.author_name {
+   margin-left: 40%;
+}
+
+.comments_table_profile_img {
+    width: 17%;
+    border-radius: 619%;
+    margin-top: 0%;
+    margin-left: 15%;
+    float: left;
+    padding-right: -20%;
+}
+
+
+.edit_table_links, .remove_table_links, .answer_table_links {
+    text-decoration: none;
+}
+
+.edit_table_links {
+    color: #00D1FF;
+}
+
+.remove_table_links {
+    color: #FF0000;
+}
+
+.answer_table_links {
+    color: #030303;
+}
