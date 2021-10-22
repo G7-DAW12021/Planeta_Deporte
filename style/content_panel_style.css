@@ -1,0 +1,47 @@
+
+
+.div_content_panel_new {
+    float: left;
+    text-align: center;
+}
+
+
+.img_content_panel_new {
+    width: 50%;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+
+.text_content_panel_new {
+    color: #066397;
+    font-size: large;
+    text-align: center;
+}
+
+.edit_remove_btns {
+    text-align: center;
+}
+
+.button_edit {
+    padding: 1%;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color:#066397;
+    border: none;
+    border-radius: 50%;
+  }
+.button_delete {
+    padding: 1%;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+}
+.edit_delete{
+    padding: 0%;
+    margin: 0%;
+}
