@@ -7,6 +7,7 @@
                 <link rel="stylesheet" type="text/css" href="style/footer_style.css" media="screen">
                 <link rel="stylesheet" type="text/css" href="style/sidebar_style.css" media="screen">
                 <link rel="stylesheet" type="text/css" href="style/breadcrumbs_style.css" media="screen">
+                <link rel="stylesheet" type="text/css" href="style/users_panel_style.css" media="screen">
                 <title>Panel de administracion: Usuarios</title> 
         </head>
 
@@ -26,39 +27,39 @@
                         
                                 <div class="div_user">
                                     <a class="header_profile_text" href="">Pepe Moreno Pérez</a>
-                                    <a href=""><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile-img.png"></a>
+                                    <a href=""><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile.png"></a>
                                 </div>
                         </nav>
                 </header>
 
-                <nav class="sidebar_admin_panel">
+                <nav class="sidebar_admin_panel_V2">
                         <ul class="nav_list">
-                                <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/logo-home.png">
+                                <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/home.png">
                                     <a class="sidebar_links" href=""> Home</a>
                                 </li>
-                                <li class="nav_items"><img class="sidebar_logos" title="Users" alt="Users" src="img/logo-users.png">
+                                <li class="nav_items"><img class="sidebar_logos" title="Users" alt="Users" src="img/users.png">
                                     <a class="sidebar_links" href=""> Usuarios</a>
                                 </li>
-                                <li class="nav_items"><img class="sidebar_logos" title="Content" alt="Content" src="img/logo-content.png">
+                                <li class="nav_items"><img class="sidebar_logos" title="Content" alt="Content" src="img/content.png">
                                 <a class="sidebar_links" href=""> Contenido</a>
                                 </li>
-                                <li class="nav_items"><img class="sidebar_logos" title="Comments" alt="Comments" src="img/logo-comment.png">
+                                <li class="nav_items"><img class="sidebar_logos" title="Comments" alt="Comments" src="img/comment.png">
                                     <a class="sidebar_links" href=""> Comentarios</a>
                                 </li>
-                                <li class="nav_items"><img class="sidebar_logos" title="Add User" alt="Add User" src="img/logo-adduser.png">
+                                <li class="nav_items"><img class="sidebar_logos" title="Add User" alt="Add User" src="img/addUser.png">
                                     <a class="sidebar_links" href=""> Añadir usuario</a>
                                 </li>
                         </ul>
                 </nav>
 
 
-                <section id="users_table_section">
+                <section class="users_table_section">
                         <header class="sub_headers">
                                 <h2 class="sub_headers_title"> Usuarios </h2>
                         </header>
 
-                        <table id="users_table">
-                                <tr>
+                        <table class="users_table">
+                                <tr class="th_row">
                                         <th>Foto</th>
                                         <th>Nombre</th>
                                         <th>Apellido</th>
@@ -67,36 +68,55 @@
                                         <th>Acciones</th>
                                 </tr>
 
-                                <tr>
-                                        <td><img class="sidebar_profile_img" title="User Img" alt="User Img" src="imgk/profile-img.png"></td>
+                                <tr class="td_row">
+                                        <td><img class="users_table_profile_img" title="User Img" alt="User Img" src="img/profile.png"></td>
                                         <td> Pepe </td>
                                         <td> Moreno Perez </td>
                                         <td> pepe2301@gmail.com</td>
-                                        <td> 6e652f478hg71516116</td>
+                                        <td> 6e65236bf69dd6c3259ebfe21ad382a5957703a5ba7aae9f34fd65a080b50712</td>
                                         <td> 
-                                            <button>
-                                                <img class="edit_btn" title="Edit btn" alt="Edit btn" src="imgk/logo-edit.jpg">
-                                            </button>
+                                            <div class="edit_remove_btns_V2">
+                                                <button class="button_edit_V2">
+                                                    <img  class="edit_delete_V2" title="Edit" alt="Edit" src="img/edit.png">
+                                                </button>
+                    
+                                                <button class="button_delete_V2" type="button">
+                                                    <img class="edit_delete_V2" title="Delete" alt="Delete" src="img/delete.png">
+                                                </button>   
+                                            </div>
                                         </td>
-                                        <td>
-                                            <button>
-                                                <img class="remove_btn" title="Remove Btn" alt="Remove Btn" src="imgk/logo-remove.png">
-                                            </button>
+                                </tr>
+
+                                <tr class="td_row">
+                                        <td><img class="users_table_profile_img" title="User Img" alt="User Img" src="img/profile.png"></td>
+                                        <td> Pepe </td>
+                                        <td> Moreno Perez </td>
+                                        <td> pepe2301@gmail.com</td>
+                                        <td> 6e65236bf69dd6c3259ebfe21ad382a5957703a5ba7aae9f34fd65a080b50712</td>
+                                        <td> 
+                                            <div class="edit_remove_btns_V2">
+                                                <button class="button_edit_V2">
+                                                    <img  class="edit_delete_V2" title="Edit" alt="Edit" src="img/edit.png">
+                                                </button>
+                    
+                                                <button class="button_delete_V2" type="button">
+                                                    <img class="edit_delete_V2" title="Delete" alt="Delete" src="img/delete.png">
+                                                </button>   
+                                            </div>
                                         </td>
                                 </tr>
                         </table>
                 </section>
 
-
                 <footer class="footers">
                         <pre class="rights_text">Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
-                        <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
+                        <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Contacto</pre>
                         <div class="social_network">
-                             <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/logo-facebook.png">
-                             <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/logo-instagram.png">
-                             <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/logo-twitter.png">
-                             <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/logo-youtube.png">
-                         </div> 
+                             <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
+                             <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/instagram.png">
+                             <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/twitter.png">
+                             <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/youtube.png">
+                        </div> 
                 </footer>
         </body>
 
