@@ -7,6 +7,7 @@
                 <link rel="stylesheet" type="text/css" href="style/footer_style.css" media="screen">
                 <link rel="stylesheet" type="text/css" href="style/sidebar_style.css" media="screen">
                 <link rel="stylesheet" type="text/css" href="style/breadcrumbs_style.css" media="screen">
+                <link rel="stylesheet" type="text/css" href="style/create_news_style.css" media="screen">
                 <title>Crear Noticia: Redactor</title> 
         </head>
 
@@ -26,7 +27,7 @@
                         
                                 <div class="div_user">
                                     <a class="header_profile_text" href="">Pepe Moreno Pérez</a>
-                                    <a href=""><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile-img.png"></a>
+                                    <a href=""><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile.png"></a>
                                 </div>
                         </nav>
                 </header>
@@ -34,13 +35,13 @@
 
                 <nav class="sidebar_writer_panel">
                         <ul class="nav_list">
-                                <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/logo-home.png">
+                                <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/home.png">
                                     <a class="sidebar_links" href=""> Home</a>
                                 </li>
-                                <li class="nav_items"><img class="sidebar_logos" title="Content" alt="Content" src="img/logo-content.png">
+                                <li class="nav_items"><img class="sidebar_logos" title="Content" alt="Content" src="img/content.png">
                                 <a class="sidebar_links" href=""> Contenido</a>
                                 </li>
-                                <li class="nav_items"><img class="sidebar_logos" title="Comments" alt="Comments" src="img/logo-comment.png">
+                                <li class="nav_items"><img class="sidebar_logos" title="Comments" alt="Comments" src="img/comment.png">
                                     <a class="sidebar_links" href=""> Comentarios</a>
                                 </li>
                         </ul>
@@ -51,36 +52,61 @@
                                 <h2 class="sub_headers_title"> Crear Noticia </h2>
                         </header>
 
-                        <form id="create_new" method="POST">
-                            <label>Autor:&nbsp;<input type="text" required /></label><br/>
-                            <label>Fecha:&nbsp;<input type="text" required /></label><br/>
-                            <label>Titulo:&nbsp;<input type="text" required /></label><br/>
-                            <label>Subtitulo:&nbsp;<input type="text" required/></label><br>
-                            <label>Seccion:&nbsp;</label>
-                            <select class="sections_select" >
-                                    <option value="Fútbol">Fútbol</option>
-                                    <option value="Baloncesto">Baloncesto</option>
-                                    <option value="Tenis">Tenis</option>
-                                    <option value="Ciclismo">Ciclismo</option>
-                                    <option value="Motor">Motor</option>
-                                    <option value="eSports">eSports</option>
-                            </select><br>
-                            <textarea id="create_new_description_area"> Descripcion</textarea><br>
-                            <input type="submit" value="Publicar"/>
-                            <input type="submit" value="Borrar"/>
+                        <form class="create_new_form" method="POST">
+                                <table class="create_new_form_table">
+                                        <tr class="row_form">
+                                                <td class="cell_label"><label>Autor:&nbsp;</label></td>
+                                                <td><input id="input_author" type="text" required value="Pepe Moreno P&eacute;rez"/></td>
+                                        </tr>
+                                        <tr>
+                                                <td class="cell_date"><label>Fecha:&nbsp;</label></td>
+                                                <td class="cell_date"><input id="input_date" type="date" required placeholder="Pe: DD/mm/YYYY"/></td>
+                                        </tr>
+                                        <tr class="row_form">
+                                                <td class="cell_label"><label>T&iacute;tulo:&nbsp;</label></td>
+                                                <td class="cell_input"><input class="input_text_news_form" type="text" required placeholder="T&iacute;tulo de la Noticia"/></td>
+                                        </tr>
+                                        <tr class="row_form">
+                                                <td class="cell_label"><label>Subt&iacute;tulo:&nbsp;</label></td>
+                                                <td class="cell_input"><input class="input_text_news_form" type="text" required placeholder="Subt&iacute;tulo de la Noticia"/></td>
+                                        </tr>
+                                        <tr>
+                                                <td><label>Secci&oacute;n:&nbsp;</label></td>
+                                                <td><select class="sections_select" >
+                                                                <option value="Fútbol">Fútbol</option>
+                                                                <option value="Baloncesto">Baloncesto</option>
+                                                                <option value="Tenis">Tenis</option>
+                                                                <option value="Ciclismo">Ciclismo</option>
+                                                                <option value="Motor">Motor</option>
+                                                                <option value="eSports">eSports</option>
+                                                        </select>
+                                                </td>
+                                        </tr>
+                                </table>
+                                <div class="menu_bar">
+                                        <button class="button_bold" type="button">N</button>
+                                        <button class="button_underline" type="button">S</button>
+                                        <button class="button_cursive" type="button">K</button>
+                                        <input class="button_size" type="number" placeholder="12"/>
+                                        <button class="button_img" type="button"><img class ="image"src="img/image.png" alt="image"/></button>
+                                </div>
+                                <textarea id="input_text_area" type="text" required rows="13px" cols="80px" > Descripci&oacute;n...</textarea>
+                                <div class="buttons_div">
+                                        <button class="button_publish" type="submit"> <img class ="publish_img"src="img/post.png" alt="publish"/>Publicar</button>
+                                        <button class="button_delete" type="submit"> <img class ="delete_img"src="img/delete.png" alt="delete"/>Borrar</button>
+                                </div>
                         </form>
                 </section>
 
 
-
                 <footer class="footers">
                         <pre class="rights_text">Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
-                        <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Ayuda        Nuestro equipo</pre>
+                        <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Contacto</pre>
                         <div class="social_network">
-                             <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/logo-facebook.png">
-                             <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/logo-instagram.png">
-                             <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/logo-twitter.png">
-                             <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/logo-youtube.png">
+                             <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
+                             <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/instagram.png">
+                             <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/twitter.png">
+                             <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/youtube.png">
                         </div> 
                 </footer>
         </body>
