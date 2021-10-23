@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8"/>
         <title>Contacto</title>
-        <link rel="stylesheet" text="text/css" href="Estilos/style.css"/>
-        <link rel="stylesheet" type="text/css" href="Estilos/header_style.css"/>
-        <link rel="stylesheet" type="text/css" href="Estilos/footer_style.css"/>
-        <link rel="stylesheet" type="text/css" href ="Estilos/breadcrumbs.css"/>
-        <link rel="stylesheet" type="text/css" href ="Estilos/menu.css"/>
+        <link rel="stylesheet" text="text/css" href="style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/header_style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/footer_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="style/breadcrumbs_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="style/sidebar_style.css"/>
     </head>
     <body>
         <header class="headers">
@@ -48,29 +48,44 @@
                     </li>
             </ul>
         </nav>
-        <section>
+        <section class="body_contact">
             <h1>Cont&aacute;ctanos</h1>
-            <p>Si tienes cualquier duda o informaci&oacute;n que quieras compartir, puedes escribirnos a trav&eacute;s de nuestras
-            redes sociales:
-            </p>
-            <ul>
-                <li><img title="Logo_Twitter" alt="Twitter" src="img/twitter.png"/>Perfil de Twitter: <div>@PlanetaDeporte</div></li>
-                <li><img title="Logo_Facebook" alt="Facebook" src="img/facebook.png"/>Perfil de Facebook: <div>facebook.com/planeta_deporte</div></li>
-                <li><img title="Logo_Instagram" alt="Instagram" src="img/instagram.png"/>Perfil de Instagram: <div>Planeta_Deporte</div></li>
-                <li><img title="Logo_YouTube" alt="Youtube" src="img/youtube.png"/>Canal de Youtube: <div>@PlanetaDeporte</div></li>
-            </ul>
-            <p> Tambi&eacute;n puedes contactarnos rellenando el siguiente formulario: </p>
-            <form id="Contact" method="POST">
-                    <label>Nombre Completo:&nbsp;<input type="text" required /></label><br/>
-                    <label>Email:&nbsp;<input type="email" required/></label><br/>
-                    <label>Asunto:&nbsp;<input type="text" required/></label><br/><br/>
-                    <label>Descripci&oacute;n:&nbsp;<input type="text" required/></label>
-                    <input type="submit" value="Enviar"/>
+            <div class="social">
+                <p>Si tienes cualquier duda o informaci&oacute;n que quieras compartir, puedes escribirnos a trav&eacute;s de nuestras
+            redes sociales:</p>
+                <ul class ="social_contact">
+                    <li ><img title="Logo_Twitter" alt="Twitter" src="img/twitter.png"/>Perfil de Twitter: <a href="#">@PlanetaDeporte</a></li>
+                    <li><img title="Logo_Facebook" alt="Facebook" src="img/facebook.png"/>Perfil de Facebook: <a href="#">facebook.com/planeta_deporte</a></li>
+                    <li><img title="Logo_Instagram" alt="Instagram" src="img/instagram.png"/>Perfil de Instagram: <a href="#">Planeta_Deporte</a></li>
+                    <li><img title="Logo_YouTube" alt="Youtube" src="img/youtube.png"/>Canal de Youtube: <a href="#">@PlanetaDeporte</a></li>
+                </ul>
+                <p> Tambi&eacute;n puedes contactarnos rellenando el siguiente formulario:
+            </div>
+            <form class="contact" method="POST">
+                <table>
+                    <tr class="row_contact">
+                        <td class="text_form"><label >Nombre Completo:&nbsp;</label></td>
+                        <td><input class="input_contact" type="text" required/></td>
+                    </tr>
+                    <tr class="row_contact">
+                        <td class="text_form" ><label>Email:&nbsp;</label></td>
+                        <td><input class="input_contact" type="email" required/></td>
+                    </tr>
+                    <tr class="row_contact">
+                        <td class="text_form" ><label>Asunto:&nbsp;</label></td>
+                        <td><input class="input_contact" type="text" required/></td>
+                    </tr>
+                    <tr class="row_contact">
+                        <td class="text_form" ><label>Descripci&oacute;n:&nbsp;</label></td>
+                        <td><textarea class="textarea_contact"type="text" required rows="6px" cols="50px"> Descripci&oacute;n...</textarea></td>
+                    </tr>
+                </table>
+                <button class="button_send" type="submit"> <img class ="send_img"src="img/send.png" alt="send"/>Enviar</button>
             </form>
         </section>
         <footer class="footers">
             <pre class="rights_text">Septiembre 2021 Unidad Editorial Informaci&oacute;ón Deportiva, S.L.U. Todos los derechos reservados.</pre>
-            <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Ayuda        Nuestro equipo</pre>
+            <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Contacto</pre>
             <div class="social_network">
                 <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
                 <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/instagram.png">

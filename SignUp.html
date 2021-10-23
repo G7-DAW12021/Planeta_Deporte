@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8"/>
         <title>Registrarse</title>
-        <link rel="stylesheet" text="text/css" href="Estilos/style.css"/>
-        <link rel="stylesheet" type="text/css" href="Estilos/header_style.css"/>
-        <link rel="stylesheet" type="text/css" href="Estilos/footer_style.css"/>
-        <link rel="stylesheet" type="text/css" href ="Estilos/breadcrumbs.css"/>
-        <link rel="stylesheet" type="text/css" href ="Estilos/menu.css"/>
+        <link rel="stylesheet" text="text/css" href="style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/header_style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/footer_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="style/breadcrumbs_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="style/sidebar_style.css"/>
     </head>
     <body>
         <header class="headers">
@@ -44,23 +44,50 @@
                     </li>
             </ul>
         </nav>
-        <section>
-            <div id ="photo_profile">
-                <img src ="img/addImage.png" alt="Añadir Foto"/>
-                <button name="add_photo" type="button">Añadir Foto</button>
+        <section class="section_profile">
+            <div class="photo_profile">
+                <img class="create_user_img" src ="img/addImage.png" alt="Añadir Foto"/>
+                <button class="button_change_img"name="change_photo" type="button"><img class="change_img"src="img/changeImage.png"/>Añadir Foto</button>
             </div>
-            <form id="Sign_Up" method="POST">
-                <label>Nombre:&nbsp;<input type="text" required /></label><br/>
-                <label>Apellidos:&nbsp;<input type="text" required /></label><br/>
-                <label>Email:&nbsp;<input type="email" required/></label><br/>
-                <label>Contraseña:&nbsp;<input type="password"required/></label><br/>
-                <label>Repetir&nbsp;Contraseña:&nbsp;<input type="password"required/></label><br/>
-                <input type="submit" value="Registrar"/>
+            <form id="sign_up" method="POST">
+                <table class="table_profile">
+                    <tr class="row_profile">
+                        <td class="cell_title"><label class ="label_title">Nombre&nbsp;</label></td>
+                    </tr>
+                    <tr class="row_profile">
+                        <td class="cell_text"><input class="input_text" type="text" required/></td>
+                    </tr>
+                    <tr class="row_profile">
+                        <td class="cell_title"><label class ="label_title">Apellidos&nbsp;</label></td>
+                    </tr>
+                    <tr class="row_profile">
+                        <td class="cell_text"><input class="input_text" type="text" required /></td>
+                    </tr>
+                    <tr class="row_profile">
+                        <td class="cell_title"><label class ="label_title">Email&nbsp;</label></td>
+                    </tr>
+                    <tr class="row_profile">
+                        <td class="cell_text"><input class="input_text" type="email" required/></td>
+                    </tr>
+                    <tr class="row_profile">
+                        <td class="cell_title"><label class ="label_title">Contraseña&nbsp;</label></td>
+                    </tr>
+                    <tr class="row_profile">
+                        <td class="cell_text"><input class="input_text" type="password"required/></td>                        
+                    </tr>
+                    <tr class="row_profile">
+                        <td class="cell_title"><label class ="label_title">Repetir&nbsp;Contraseña:&nbsp;</label></td>
+                    </tr>
+                    <tr class="row_profile">
+                        <td class="cell_text"><input class="input_text" type="password"required/></td>
+                    </tr>
+            </table>
+            <button id="button_signup" type="submit"><img class="sign_img" src="img/send.png"/>Registrarse</button>
             </form>
         </section>
         <footer class="footers">
             <pre class="rights_text">Septiembre 2021 Unidad Editorial Informaci&oacute;ón Deportiva, S.L.U. Todos los derechos reservados.</pre>
-            <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Ayuda        Nuestro equipo</pre>
+            <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Contacto</pre>
             <div class="social_network">
                 <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
                 <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/instagram.png">
