@@ -6,7 +6,9 @@
         <link rel="stylesheet" type="text/css" href="style/news_style.css" media="screen">
         <link rel="stylesheet" type="text/css" href="style/footer_style.css" media="screen">
         <link rel="stylesheet" type="text/css" href="style/header_style.css" media="screen">
-        <title>Home Usuario Registrado</title> 
+        <link rel="stylesheet" type="text/css" href="style/breadcrumbs_style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style/sidebar_style.css" media="screen">
+        <title>Sección Deporte </title> 
     </head>
 
     <body>
@@ -24,32 +26,56 @@
                     <a class="contact_links" href=""> Contacto</a>
                 </div>
                 <div class="div_btns">
-                    <a class="actions_btn_bg" href="">Cerrar Sesión</a>
-                    <a href=""><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile.png"></a>
+                    <a class="login_register_btn" href="">Iniciar Sesión</a>
+                    <a class="login_register_btn" href="">Registrarse</a>
                 </div>
             </nav>
         </header>
 
-        <div class="main_frame">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_items">
+                    <a class="breadcrumbs_links" href=""> Home </a>
+                </li>
+
+                <li class="breadcrumbs_list_items">
+                    <img  title="Beak" alt="Beak" src="img/beak.png">
+                </li>
+
+                <li class="breadcrumbs_list_items">
+                    <a class="breadcrumbs_links" href=""> Futbol </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="sidebar_home_panel">
+            <ul class="nav_list">
+                    <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/home.png">
+                        <a class="sidebar_links" href=""> Home</a>
+                    </li>
+            </ul>
+        </nav>
+
+        <div class="main_frame_sport_section">
             <aside class="aside_news">
-                <div id="aside_new_1">
+                <div class="aside_new_1">
                     <img class="aside_images" title="irving" alt="irving" src="img/irving.jpg">
                     <header>
                         <h4>¡Bombazo en la NBA! Los Brooklyn Nets se cansan de Kyrie Irving y podrían prescindir de él esta misma temporada</h4>
                     </header>
                     <br>
                 </div>
-                <div id="aside_new_2">
+                <div class="aside_new_2">
                     <img class="aside_images" title="sr4" alt="sr4" src="img/sr4.jpg">
                     <header>
                         <h4>Pochettino: "Quizá la realidad de Sergio Ramos es otra que la de 2014"</h4>
                     </header>
                     <br>
                 </div>
-                <div id="aside_new_3">
+                <div class="aside_new_3">
                     <img class="aside_images" title="quique" alt="quique" src="img/quique.jpg">
                     <header>
-                        <h4>Quique Sánchez Flores: "Michel es mi amigo,le deseo lo mejor"</h4>
+                        <h4>Quique Sánchez Flores: "Michel es mi amigo, le deseo lo mejor"</h4>
                     </header>
                 </div>
             </aside>
@@ -57,27 +83,23 @@
             <section class="main_new">
                 <img class="main_image" title="chiesa" alt="chiesa" src="img/chiesa.jpg">
                 <header>
-                    <h2> Federico Chiesa, de querar dejarlo a los 13 años a ser la estrella de Italia</h2>
+                    <h1>Federico Chiesa, de querar dejarlo a los 13 años a ser la estrella de Italia</h1>
                 </header>
             </section>
 
             <section class="secondary_news">
-                <div id="secondary_new_1">
-                    <img class="secondary_images" id="secondary_image_1" title="vidal" alt="vidal" src="img/vidal.jpg">
-                    <header>
-                        <h3>Sale a la luz un polémico vídeo de Arturo Vidal 'achispado' de más en su Ferrari</h3>
-                    </header>
-                    <br>
+                <div class="secondary_new_sport_section">
+                    <img class="secondary_images_sport_section" title="alonso" alt="alonso" src="img/alonso.jpg">
                 </div>
-                <div id="secondary_new_2">
-                    <img class="secondary_images" id="secondary_image_2" title="alonso" alt="alonso" src="img/alonso.jpg">
+                <div class="secondary_new_text_section">
                     <header>
-                        <h3>Alpine: "Fernando Alonso ha ofrecido actuaciones mágicas en varias carreras"</h3>
+                        <h2 class="secondary_new_text">Alpine:"Fernando Alonso ha ofrecido actuaciones mágicas en varias carreras. Los aficionados 
+                            deben confiar en el plan durante la siguiente temporada"</h2>
                     </header>
-                </div>
+                </div>    
             </section>
         </div>
-        
+
         <footer class="footers">
             <pre class="rights_text">Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</pre>
             <pre class="terms_text">Términos y condiciones de uso      Política de privacidad       Política de cookies        Contacto</pre>
@@ -87,7 +109,7 @@
                  <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/twitter.png">
                  <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/youtube.png">
              </div> 
-        </footer> 
+        </footer>
     </body>
     
 </html>
