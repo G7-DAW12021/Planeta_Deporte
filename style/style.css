@@ -1,0 +1,239 @@
+body{
+  margin: 0px;
+}
+/*--------------------Cuerpo de la página web-----------------*/
+.body_contact {
+    margin: 1% 1% 0.5% 5.8%;
+    text-align: center;
+    font-size: large;
+}
+/*---------Cuadro de redes sociales---------*/
+.social{
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+/*---------Cada red social--------*/
+.social_contact{
+  list-style-type: none;
+  text-align: left;
+}
+/*------------------Form_contact-------------------------*/
+.contact, #sign_up{
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  padding-bottom: 3%;
+  padding-top: 0.3%;
+}
+.text_form {
+  display: inline-block;
+  width: 100%;
+  text-align: end;
+  margin: 0 auto;
+}
+.input_contact, .textarea_contact {
+  width: 80%;
+  float: left;
+  background: #DEF1FF;
+  padding: 0.5%;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px rgba(58, 58, 68, 0.2), 0px 4px 8px rgba(90, 91, 106, 0.2);
+}
+.row_contact{
+  margin: 2% 0% 1% 5%;
+  padding: 1% 40%;
+}
+.button_send {
+  margin-top: 1%;
+  float: right;
+  width: 20%;
+  border-radius: 10px;
+  border: none;
+  background-color: #008CF2;
+  color: #FFFFFF;
+  font-size: medium;
+  text-transform: uppercase;
+  padding: 0.5% 0% 0.5% 2%;
+}
+.send_img{
+  float: left;
+  margin-left: 3%;
+  width: 16.5%;
+}
+/*-------------------------Photo_Profile-------------------------------*/
+.section_profile{
+  padding: auto;
+  margin-top: 1%;
+}
+.photo_profile{
+  text-align: center;
+  width: 30%;
+  float: left;
+}
+.profile_img {
+  width: 40%;
+  border-radius: 50%;
+
+}
+.button_change_img {
+  margin-top: 1%;
+  width: 30%;
+  border-radius: 5px;
+  border: none;
+  background-color: #066397;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 0.9% 0.7% 0.8% 2%;
+  font-size: 15px;
+}
+.change_img {
+  float: left;
+  width: 12%;
+  padding-bottom: 0.5%;
+}
+/*-------------------Form_Profile-------------------------------*/
+#edit_profile{
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  padding-bottom: 3%;
+  padding-top: 0.3%;
+  float: left;
+}
+#table_profile{
+  width: 100%;
+  margin-top: 2%;
+}
+.row_profile{
+  padding: 0% 60%;
+
+}
+.cell_title{
+  width: 15%;
+}
+.label_title{
+  font-size: medium;
+  color:#4F91FF;
+  float: left;
+  font-family: cursive;
+
+}
+.cell_text {
+  width: 40%;
+  padding: 1% 0%;
+}
+.input_text {
+  padding: 2% 8%;
+}
+.button{
+  width: 3%;
+}
+.button_edit {
+  padding: 1%;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color:#066397;
+  border: none;
+  border-radius: 50%;
+}
+.button_ok{
+  padding: 0.5%;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+}
+.button_ok img{
+  width: 50%;
+}
+.edit_delete{
+  padding: 0%;
+  margin: 0%;
+}
+/*---------------------------Sign_Up----------------------------*/ 
+.create_user_img{
+  width: 85%;
+}
+#button_signup{
+  margin-top: 2%;
+  margin-left: 25%;
+  text-align: center;
+  width: 25%;
+  border-radius: 10px;
+  border: none;
+  background-color: #008CF2;
+  color: #FFFFFF;
+  font-size: medium;
+  text-transform: uppercase;
+  padding: 0.5% 0% 0.5% 1.5%;
+}
+.sign_img{
+  float: left;
+  margin-left: 3%;
+  width: 12.5%;
+  margin-bottom: 0.5%;
+}
+/*--------------------------Login-----------------------*/
+#section_login {
+  margin: 3% 0%;
+}
+#login {
+  width: 15%;
+  margin: 0% auto;
+  background-color: #DEF1FF;
+  border-radius: 3%;
+  padding: 0.5%;
+}
+#login table {
+  width: 96%;
+  margin: 1% 2%;
+}
+#logo {
+  width: 70%;
+}
+#login table {
+  width: 100%;
+  margin: 1% 0%;
+}
+.row_login{
+  text-align: center;
+}
+.label_login {
+  color: #007BAD;
+  font-size: small;
+  font-family: cursive;
+  margin-left: 8%;
+}
+.input_login {
+  border: 2px solid #007BAD;
+  margin: 1% 7%;
+  background-color: #DEF1FF;
+  padding: 2% 11.5%;
+}
+#password_login{
+  margin-top: 1%;
+}
+#label_sign{
+  margin-left: 8%;
+  font-size: small;
+}
+#sign_new{
+  text-decoration:none;
+  color: #007BAD;
+}
+.button_login {
+  margin: 2% auto;
+  display: block;
+  width: 84%;
+  border-radius: 3px;
+  border: none;
+  background-color: #4267B2;
+  color: #DEF1FF;
+  font-size: medium;
+  padding: 0.5%;
+}
