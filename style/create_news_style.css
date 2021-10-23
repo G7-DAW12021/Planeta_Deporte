@@ -55,12 +55,22 @@ table.create_new_form_table {
     background-color: #AAAAAA;
     margin: 0.3% 0.5%;
     padding: 0.3%;
-    width: 12%;
+    width: 16%;
     border-radius: 3px;
 }
-.button_bold, .button_cursive, .button_underline, .button_size, .button_img {
-    width: 16.2%;
-    padding: 4% 6%;
+.cell_button{
+    width: 15%;
+}
+.cell_size {
+    width: 28%;
+    padding: 1%;
+}
+.cell_img {
+    text-align: center;
+    width: 19%;
+}
+.button_bold, .button_cursive, .button_underline, .button_size {
+    padding: 19% 34%;
     border-radius: 3px;
     background-color: #979797;
     border: none;
@@ -76,14 +86,16 @@ table.create_new_form_table {
 .button_cursive{
     font-style: italic;
 }
-.button_size{
-    width: 15%;
-}
-.button_img{
-    
-}
-.image{
+.button_size {
     width: 100%;
+    padding: 11.5%;
+}
+.button_img {
+    border-radius: 3px;
+    background-color: #979797;
+    border: none;
+    padding: 10% 11%  8%  9%;
+    margin-left: 32%;
 }
 #input_text_area{
     margin: 0.3% 0.5%;
