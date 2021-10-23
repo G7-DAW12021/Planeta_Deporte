@@ -1,0 +1,131 @@
+
+.create_new_form {
+    float: left;
+    margin-top: 1%;
+    padding-left: 1%;
+    width: 91%;
+}
+/*----------------------Tabla-------------------------------*/
+table.create_new_form_table {
+    width: 100%;
+}
+.cell_label{
+    width: 5%;
+    padding: 0.5% 0%;
+
+}
+.cell_input {
+    padding: 0.5% 0%;
+}
+.input_text_news_form, #input_author, #input_date, #input_text_area{
+    width: 40%;
+    float: left;
+    background: #DEF1FF;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgba(58, 58, 68, 0.2), 0px 4px 8px rgba(90, 91, 106, 0.2);
+}
+.input_text_news_form{
+    width: 87.3%;
+}
+#input_text_area {
+    padding: 0.5%;
+}
+#input_author{
+    width: 25%;
+}
+#input_date{
+    width: 8%;
+    margin-top: 0.5%;
+    padding: 0.5% 1%;
+}
+.sections_select {
+    width: 10%;
+    float: left;
+    background: #DEF1FF;
+    padding: 0.5%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgba(58, 58, 68, 0.2), 0px 4px 8px rgba(90, 91, 106, 0.2);
+}
+/*--------------------Menu_de_editar-------------------------------*/
+.menu_bar {
+    list-style-type: none;
+    background-color: #AAAAAA;
+    margin: 0.3% 0.5%;
+    padding: 0.3%;
+    width: 12%;
+    border-radius: 3px;
+}
+.button_bold, .button_cursive, .button_underline, .button_size, .button_img {
+    width: 16.2%;
+    padding: 4% 6%;
+    border-radius: 3px;
+    background-color: #979797;
+    border: none;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.button_bold{
+    font-weight: bold;
+}
+.button_underline{
+    text-decoration: underline;
+}
+.button_cursive{
+    font-style: italic;
+}
+.button_size{
+    width: 15%;
+}
+.button_img{
+    
+}
+.image{
+    width: 100%;
+}
+#input_text_area{
+    margin: 0.3% 0.5%;
+    width: 90%;
+    float: left;
+    background: #DEF1FF;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgba(58, 58, 68, 0.2), 0px 4px 8px rgba(90, 91, 106, 0.2);
+    color: #888888;
+}
+/*-------------------botones publicar y eliminar-----------------*/
+.buttons_div {
+    float: right;
+    width: 50%;
+}
+.buttons_div {
+    width: 50%;
+    text-align: end;
+    margin-right: 5%;
+}
+.button_publish, .button_delete {
+    margin-top: 1%;
+    display: inline-block;
+    /* float: left; */
+    width: 17%;
+    border-radius: 10px;
+    border: none;
+    background-color: #008CF2;
+    color: #FFFFFF;
+    font-size: medium;
+    text-transform: uppercase;
+    padding: 0.5% 0% 0.5% 1.5%;
+}
+.publish_img, .delete_img {
+    float: left;
+    margin-left: 2%;
+    width: 13%;
+}
+.button_delete {
+    background: #FF0000;
+}
+.delete_img {
+    width: 10%;
+}
