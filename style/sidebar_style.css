@@ -55,6 +55,7 @@
     padding-left: 1.5%;
 }
 
+
 /*----------------------------------------------------------Home Panel-------------------------------------------------------------------------------------------------------*/
 .sidebar_home_panel {
     display: block;
@@ -63,6 +64,16 @@
     margin-left: -0.5%;
     background: #C2E2FA;
     padding-bottom: 26.5%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.sidebar_home_panel_v3{
+    display: block;
+    float: left;
+    margin-left: -0.5%;
+    background: #C2E2FA;
+    padding-bottom: 84.8%;
     padding-right: 2%;
     padding-left: 2%;
 }
@@ -88,3 +99,4 @@
     padding-right: 1.3%;
     padding-left: 1.5%;
 }
+
