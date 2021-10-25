@@ -11,19 +11,24 @@
     width: 95%;
 }
 
-.add_user__img_btn {
+
+.add_user_img_btn {
+    margin-top: 1%;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
     background-color: #066397;
     color: #FFFFFF;
-    border-radius: 5px;
-    padding: 3%;
+    text-transform: uppercase;
+    padding: 1.5% 2% 1.7% 2%;
+    font-size: 15px;
 }
-
 
 .change_image {
-    width: 15%;
+    width: 12%;
     margin-right: 10%;
-    margin-bottom: -4%;
 }
+
 
 
 .create_user_form {
