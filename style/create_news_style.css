@@ -120,7 +120,6 @@ table.create_new_form_table {
 .button_publish, .button_delete {
     margin-top: 1%;
     display: inline-block;
-    /* float: left; */
     width: 17%;
     border-radius: 10px;
     border: none;
