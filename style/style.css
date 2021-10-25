@@ -32,7 +32,7 @@ body{
   text-align: end;
   margin: 0 auto;
 }
-.input_contact, .textarea_contact {
+.input_contact, .textarea_contact, .input_text {
   width: 80%;
   float: left;
   background: #DEF1FF;
@@ -129,16 +129,20 @@ body{
 }
 .button{
   width: 3%;
+  padding: 0%;
 }
+
 .button_edit {
-  padding: 1%;
+  padding: 4% 2%;
   text-align: center;
   outline: none;
   color: #fff;
-  background-color:#066397;
+  background-color: #066397;
   border: none;
   border-radius: 50%;
+  width: 45%;
 }
+
 .button_ok{
   padding: 0.5%;
   text-align: center;
@@ -181,7 +185,9 @@ body{
 /*--------------------------Login-----------------------*/
 #section_login {
   margin: 3% 0%;
+  padding: 4.8% 0%;
 }
+
 #login {
   width: 15%;
   margin: 0% auto;
