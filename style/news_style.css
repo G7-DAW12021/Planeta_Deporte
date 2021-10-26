@@ -1,230 +1,227 @@
-@media screen {
 
-    /*-------------------------------------------------------------------------------- Home style ------------------------------------------------------------------------*/
-   
-    .main_frame{
-        width: 79%;
-        height: 80%;
-        left: 20%;
-        top: 17%;
-        margin-left: 9%;
-        margin-right: 10.5%;
-        margin-top: 4%;
-        margin-bottom: 2%;
-        padding-bottom: 10%;
-    }
+/*-------------------------------------------------------------------------------- Home style ------------------------------------------------------------------------*/
 
-    .aside_news{
-        float: right;
-        left: 54%;
-        top: 17%;
-        width: 35%;
-        height: 62%;
-    }
+.main_frame{
+    width: 79%;
+    height: 80%;
+    left: 20%;
+    top: 17%;
+    margin-left: 9%;
+    margin-right: 10.5%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding-bottom: 10%;
+}
 
-    .aside_images{
-        width: 33%;
-        display: block;
-        margin: auto;
-    }
+.aside_news{
+    float: right;
+    left: 54%;
+    top: 17%;
+    width: 35%;
+    height: 62%;
+}
 
-    .main_new{ 
-        width: 64%;
-        top: 17%;
-        padding-bottom: 2%;
-    }
+.aside_images{
+    width: 33%;
+    display: block;
+    margin: auto;
+}
 
-    .main_image{
-        width: 48%;
-        height: 85%;
-        display: block;
-        margin: auto;
-    }
+.main_new{ 
+    width: 64%;
+    top: 17%;
+    padding-bottom: 2%;
+}
 
-    
-    .secondary_news{
-        width:64%;
-    }
+.main_image{
+    width: 48%;
+    height: 85%;
+    display: block;
+    margin: auto;
+}
 
-    
-    .secondary_new_1{
-        float: left;
-        width: 50%;
-    }
 
-    .secondary_new_2{
-        float: right;
-        width: 50%;
-    }
+.secondary_news{
+    width:64%;
+}
 
-    #secondary_image_1{
-        width: 27%;
-    }
 
-    #secondary_image_2{
-        width: 50%;
-    }
+.secondary_new_1{
+    float: left;
+    width: 50%;
+}
 
-    .secondary_images{
-        display: block;
-        margin: auto;
-    }
+.secondary_new_2{
+    float: right;
+    width: 50%;
+}
 
-     /*-------------------------------------------------------------------------------- Sport section style ------------------------------------------------------------------------*/
+#secondary_image_1{
+    width: 27%;
+}
 
-    .main_frame_sport_section{
-        width: 79%;
-        height: 80%;
-        left: 20%;
-        top: 17%;
-        margin-left: 9%;
-        margin-right: 10.5%;
-        margin-top: 1%;
-        margin-bottom: 2%;
-        padding-bottom: 10%;
-    }
+#secondary_image_2{
+    width: 50%;
+}
 
-    .secondary_new_sport_section{
-        float:left;
-        width: 50%;
-    }
+.secondary_images{
+    display: block;
+    margin: auto;
+}
 
-    .secondary_images_sport_section{
-        display: block;
-        margin: auto;
-        margin-left:22%;
-        width:72%;
-    }
+/*-------------------------------------------------------------------------------- Sport section style ------------------------------------------------------------------------*/
 
-    .secondary_new_text_section{
-        float:right;
-        width:50%;
-        padding-bottom: 2%;
-    }
+.main_frame_sport_section{
+    width: 79%;
+    height: 80%;
+    left: 20%;
+    top: 17%;
+    margin-left: 9%;
+    margin-right: 10.5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding-bottom: 10%;
+}
 
-    .secondary_new_text{
-        text-align: justify;
-    }
+.secondary_new_sport_section{
+    float:left;
+    width: 50%;
+}
 
-    /*-------------------------------------------------------------------------------- New style ------------------------------------------------------------------------*/
+.secondary_images_sport_section{
+    display: block;
+    margin: auto;
+    margin-left:22%;
+    width:72%;
+}
 
-    .main_frame_new_section{
-        margin: 1.5%  0% 3% 15.8%;
-        width: 60%;
-        display: inline-block;
-    }
+.secondary_new_text_section{
+    float:right;
+    width:50%;
+    padding-bottom: 2%;
+}
 
-    .new_image{
-        display: block;
-        margin: auto;
-        width:50%;
-    }    
+.secondary_new_text{
+    text-align: justify;
+}
 
-    .author_image{
-        width: 40%;
-        display: block;
-        margin: auto;
-    }
+/*-------------------------------------------------------------------------------- New style ------------------------------------------------------------------------*/
 
-    .main_new_section {
-        padding-bottom: 2%;
-    }
+.main_frame_new_section{
+    margin: 1.5%  0% 3% 15.8%;
+    width: 60%;
+    display: inline-block;
+}
 
-    .author_text_section{
-        float: left;
-        width: 75%;
-    }
+.new_image{
+    display: block;
+    margin: auto;
+    width:50%;
+}    
 
-    .author_photo_section{
-        float:left;
-        width: 25%;
-        padding-top: 2.7%;
-    }
+.author_image{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
 
-    .section_header{
-        text-align: left;
-    }
+.main_new_section {
+    padding-bottom: 2%;
+}
 
-    .recommendation_image_1{
-        width:47%;
-        display:block;
-        margin:auto;
-    }
+.author_text_section{
+    float: left;
+    width: 75%;
+}
 
-    .recommendation_image_2{
-        width:32%;
-        display:block;
-        margin:auto;
-    }
+.author_photo_section{
+    float:left;
+    width: 25%;
+    padding-top: 2.7%;
+}
 
-    .recommendation_image_3{
-        width:45%;
-        display:block;
-        margin:auto;
-    }
+.section_header{
+    text-align: left;
+}
 
-    .recommendation_new_section_1{
-        float: left;
-        width: 33%;
-    }
+.recommendation_image_1{
+    width:47%;
+    display:block;
+    margin:auto;
+}
 
-    .recommendation_new_section_2{
-        float: left;
-        width: 33%;
-    }
-    .recommendation_new_section_3{
-        float: right;
-        width: 34%;
-    }
+.recommendation_image_2{
+    width:32%;
+    display:block;
+    margin:auto;
+}
 
-    .recommendations, .author_biography, .comments, .comment_section{
-        border-top: 2px solid black;
-        display: inline-block;
-    }
+.recommendation_image_3{
+    width:45%;
+    display:block;
+    margin:auto;
+}
 
-    .comment_section{
-        border-top: 1px solid black;
-    }
+.recommendation_new_section_1{
+    float: left;
+    width: 33%;
+}
 
-    .commentator_photo_section{
-        float:left;
-        width:20%;
-        margin-top: 0.5%;    
-    }
+.recommendation_new_section_2{
+    float: left;
+    width: 33%;
+}
+.recommendation_new_section_3{
+    float: right;
+    width: 34%;
+}
 
-    .commentator_photo{
-        width: 35%;
-        display: block;
-        margin: auto;
-    }
+.recommendations, .author_biography, .comments, .comment_section{
+    border-top: 2px solid black;
+    display: inline-block;
+}
 
-    .comment_section, .comments{
-        display: block;
-    }
+.comment_section{
+    border-top: 1px solid black;
+}
 
-    .add_comment_button{
-        display: block;
-        margin: auto;
-        width: 30%;
-        border-radius: 5px;
-        border: none;
-        background-color: #066397;
-        color: #FFFFFF;
-        padding: 0.9% 0.5%;
-        font-size: 15px;
-        margin-top: 3%;
-    }
+.commentator_photo_section{
+    float:left;
+    width:20%;
+    margin-top: 0.5%;    
+}
 
-    .biography_text{
-        font-family:cursive
-    }
+.commentator_photo{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
 
-    .new_subtitle{
-        color: rgb(141, 141, 141);
-    }
-    
-    h1, h2, h3, h4, pre{
-        text-align: center;
-    }
-    
+.comment_section, .comments{
+    display: block;
+}
+
+.add_comment_button{
+    display: block;
+    margin: auto;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    background-color: #066397;
+    color: #FFFFFF;
+    padding: 0.9% 0.5%;
+    font-size: 15px;
+    margin-top: 3%;
+}
+
+.biography_text{
+    font-family:cursive
+}
+
+.new_subtitle{
+    color: rgb(141, 141, 141);
+}
+
+h1, h2, h3, h4, pre{
+    text-align: center;
 }
