@@ -3,7 +3,7 @@
 /*Header principal con el fondo azul*/
 .nav_header {
     padding: 2%;
-}
+} 
 /*Menu hamburguesa e imagen perfil de movil*/
 .navbar-burguer-btn, .header_profile_img_V2, .link_mobile, .logo_user {
     display: none;

@@ -1,7 +1,7 @@
 /*Ocultar versión móvil y tablet*/
 .mobile_bread, .new_breadcrumb {
     display: none;
-}
+} 
 /*Breadcrumbs general*/
 .breadcrumbs_nav, .sub_headers {
     background: #3F3F3F;
