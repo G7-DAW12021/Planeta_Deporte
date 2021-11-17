@@ -1,41 +1,67 @@
-.footers {
-    padding: 0.1%;
-    background: #3F3F3F;
-    position: relative;
-    clear:both;
+html {
+  position: relative;
+  min-height: 100%;
 }
-
-
+body {
+  margin-bottom: 10.8%; 
+}
+/*Footer*/
+.footers {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #3F3F3F;
+}
+/*Div del contenido del footer*/
+.content{
+    max-width: none;
+    padding-top: 1%;
+}
 /* Text: Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados. */
 .rights_text {
-    height: 10%;
     top:0%;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 87,5%;
-    line-height: 100%;
-    align-items: center;
     text-align: center;
-    letter-spacing: 4,69%;
     text-transform: uppercase;
     color: #FFFFFF;
+    font-size: 87.5%;
 }
-
-
 /* Text: Términos y condiciones de uso Política de privacidad Política de cookies Ayuda Nuestro equipo */
 .terms_text {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 85%;
-    line-height: 81,25%;
-    align-items: center;
     text-align: center;
-    letter-spacing: 4,69%;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 .social_network{
     text-align: center; 
+    margin-bottom: 1%;
+}
+
+/*###################################################################### MEDIA QUERIES #############################################################################################*/
+/*Media Query para Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .rights_text {
+        font-weight: normal;
+        font-size: 72%;
+    }
+    .terms_text {
+        font-size: 60%;
+    }
+}
+/*Media Query para Movil*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .rights_text {
+        font-weight: normal;
+        font-size: 60%;
+    }
+
+    .terms_text {
+        font-size: 55%;
+    }
 }
