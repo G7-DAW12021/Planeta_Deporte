@@ -64,7 +64,7 @@ function change_sidebar(){
     if(file === "admin_users_panel.html"||file === "admin_comments_panel.html"||file === "admin_content_panel.html"||
     file === "new_registered.html"|| file === "writer_comments_panel.html"||file === "writer_content_panel.html"||
     file === "writer_create_news.html" || file ==="create_news.html" || file==="create_user.html"){
-        clase.className="sidebar_admin";
+        clase.className="sidebar_admin col-sm-2";
     }
 }
 function change_attr(){
