@@ -106,7 +106,7 @@ function change_attr(){
         width_body=window.width_old;
     }
     if((height>height_body && width_new>width_body)|| (height>= height_body && width_new>=width_body)){ 
-        attri[0].style.height="90vh";
+        attri[0].style.height="80vh";
         cuerpo[0].style.paddingBottom="0%";
         footer[0].style.position="absolute";
         window.width_old=width_new;
