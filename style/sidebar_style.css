@@ -1,3 +1,17 @@
+ /*General: Sidebar y Contenido (Etiqueta div clase container)*/
+ .contain{
+    max-width: none;
+    padding: 0%;
+    position: relative;
+}
+/*Sidebar y Contenido (Etiqueta div clase row)*/
+.contain_row{
+    padding: 0%;
+    padding-left: 1%;
+    margin-right: 0%;
+    height: auto;
+    width: 100%;
+}
 /*Etiqueta ul*/
 .nav_list {
     list-style-type: none;
@@ -23,22 +37,7 @@
 }
 /*###################################################################### MEDIA QUERIES #############################################################################################*/
 @media only screen and (min-width:992px) {
-    /*General: Sidebar y Contenido (Etiqueta div clase container)*/
-    .contain{
-        max-width: none;
-        padding: 0%;
-    }
-    /*Sidebar y Contenido (Etiqueta div clase row)*/
-    .contain_row{
-        padding: 0%;
-        padding-left: 1%;
-        margin-right: 0%;
-    }
-    /*Sidebar zona administración*/
-    .sidebar_admin{
-        height: auto;
-        
-    }
+
     /*Menu Lateral General*/
     .sidebar, .sidebar_admin {
         display: block;
@@ -47,6 +46,11 @@
         background: #C2E2FA;
         padding: 0% 2%;
         width: 10%;
+    }
+    /*Sidebar zona administración*/
+    .sidebar_admin{
+        height: auto;
+        width: 15%;
     }
 }
 /*Media Query para Movil*/

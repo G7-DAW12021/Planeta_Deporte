@@ -233,6 +233,7 @@
         width: 30%;
         text-align: left;
         position: absolute;
+        z-index: 1;
     }
     /*Enlaces del header y su etiqueta a*/
     .header_links, .header_links a{

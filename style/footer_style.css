@@ -2,12 +2,20 @@ html {
   position: relative;
   min-height: 100%;
 } 
-body {
-  margin-bottom: 10.8%; 
+/*body {
+margin-bottom: 10.8%; 
+}*/
+section{
+    position:relative;
+
 }
+.cuerpo{
+    padding-bottom: 0%;
+}
+
 /*Footer*/
 .footers {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   background: #3F3F3F;
@@ -15,7 +23,7 @@ body {
 /*Div del contenido del footer*/
 .content{
     max-width: none;
-    padding-top: 1%;
+    padding: 1%;
 }
 /* Text: Septiembre 2021 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados. */
 .rights_text {
