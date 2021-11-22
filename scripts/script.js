@@ -1,8 +1,14 @@
 window.addEventListener("load",call_method);
+var width_old =0;
+var height_old =0;
 function call_method(){
     change_sidebar();
     link();
+    change_attr();
 }
+window.addEventListener("resize", change_attr);
+
+
 /*----Botón hamburguesa- Mobile ---*/
 function link(){
     /* buscador-input*/
@@ -21,13 +27,12 @@ function link(){
     img.src="img/search_mobile.png";
     document.getElementsByClassName("button_search")[0].append(img);
     /* links*/
-    var name=["Futbol", "Baloncesto", "Tenis", "Ciclismo", "Motor", "eSport"];
+    var name=["Futbol", "Baloncesto", "Tenis", "Ciclismo", "Motor", "eSports"];
     for(let i=0; i<name.length; i++){
         var node = document.createElement("a");
-        var textnode = document.createTextNode(name[i]);
-        node.href="sport_section_registered.html";
+        node.href="sport_section_registered.html?section=" + name[i].toLowerCase();
         node.className="nav-link nav-item header_links";
-        node.appendChild(textnode);
+        node.text=name[i];
         document.getElementsByClassName("link_mobile")[0].append(node);
     }
     var a = document.createElement("a");
@@ -44,8 +49,8 @@ function change_Contact(){
     var page=window.location.href;
     var ruta=page.split("/");
     var file=ruta[ruta.length-1];
-    if(file === "contact.html"|file === "signup.html"|file === "home.html"|file === "sport_section.html"|
-       file === "login.html"|file === "new.html"|file === "filtered_news.html"){
+    if(file === "contact.html"||file === "signup.html"||file === "home.html"||file === "sport_section.html"||
+       file === "login.html"||file === "new.html"||file === "filtered_news.html"){
         clase="contact.html";
     }
     return clase;
@@ -56,9 +61,64 @@ function change_sidebar(){
     var ruta=page.split("/");
     var file=ruta[ruta.length-1];
     var clase=document.getElementById("side");
-    if(file === "admin_users_panel.html"|file === "admin_comments_panel.html"|file === "admin_content_panel.html"|
-    file === "new_registered.html"| file === "writer_comments_panel.html"|file === "writer_content_panel.html"|
-    file === "writer_create_news.html"){
+    if(file === "admin_users_panel.html"||file === "admin_comments_panel.html"||file === "admin_content_panel.html"||
+    file === "new_registered.html"|| file === "writer_comments_panel.html"||file === "writer_content_panel.html"||
+    file === "writer_create_news.html" || file ==="create_news.html" || file==="create_user.html"){
         clase.className="sidebar_admin";
     }
+}
+function change_attr(){
+    var attri=document.getElementsByClassName("contain_row");
+    var cuerpo=document.getElementsByClassName("cuerpo");
+    var footer=document.getElementsByTagName("footer");
+    reset(attri, cuerpo, footer);
+
+    var height=window.innerHeight;
+    var height_header= document.getElementsByClassName("headers")[0].offsetHeight;
+    var height_section= document.getElementsByTagName("section")[0].offsetHeight;
+    var height_footer= document.getElementsByTagName("footer")[0].offsetHeight;
+
+    var height_bread=0;
+    var page=window.location.href;
+    var ruta=page.split("/");
+    var file=ruta[ruta.length-1];
+    if(file !=="home.html" || file !=="home_registered.html" || file!=="admin_users_panel.html"
+    || file!=="admin_comments_panel.html" || file!=="admin_content_panel.html"|| file!=="create_new.html" 
+    || file!=="create_user.html"|| file!=="writer_comments_panel.html" || file !=="writer_content_panel.html" 
+    ||file!=="writer_news_panel.html"){
+        height_bread= document.getElementsByClassName("breadcrumbs_nav")[0].offsetHeight;
+    }
+
+    var height_body=height_bread+height_header+height_section+height_footer;
+
+    var width_new=window.innerWidth;
+    var width_body= document.getElementsByClassName("headers")[0].offsetWidth;
+
+    
+    /*Si de altura de pantalla es mas grande que lo que ocupa el body entero(header, breadcrumbs, section y footer)
+    * OR
+    * Si la anchura nueva es menor que la anterior sin importar la altura de la pantalla y del body entero
+    */
+    if(window.height_old!== 0 && window.width_old === width_new){
+        height_body=window.height_old;
+    }
+    if(window.width_old!==0 && window.height_old=== height){
+        width_body=window.width_old;
+    }
+    if((height>height_body && width_new>=width_body)|| (height>= height_body && width_new>=width_body)){ 
+        cuerpo[0].style.paddingBottom="0%";
+        footer[0].style.position="absolute";
+        window.width_old=width_new;
+        window.height_old=height_body;
+    } else{
+        attri[0].style.height="auto";
+        cuerpo[0].style.paddingBottom="5%";
+        footer[0].style.position="relative";
+    }
+   /* console.log("height:"+ height + ", height_body"+ height_body + ", width"+ width_new + ", width_body" + window.width_old);*/
+}
+function reset(attri, cuerpo, footer){
+    attri[0].style.height="auto";
+    cuerpo[0].style.paddingBottom="0%";
+    footer[0].style.position="relative";
 }
