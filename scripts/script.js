@@ -5,8 +5,12 @@ function call_method(){
     change_sidebar();
     link();
     change_attr();
+    deleteClassRow();
 }
-window.addEventListener("resize", change_attr);
+window.addEventListener("resize", function(){
+    change_attr();
+    deleteClassRow();
+});
 
 
 /*----Botón hamburguesa- Mobile ---*/
@@ -64,7 +68,7 @@ function change_sidebar(){
     if(file === "admin_users_panel.html"||file === "admin_comments_panel.html"||file === "admin_content_panel.html"||
     file === "new_registered.html"|| file === "writer_comments_panel.html"||file === "writer_content_panel.html"||
     file === "writer_create_news.html" || file ==="create_news.html" || file==="create_user.html"){
-        clase.className="sidebar_admin col-sm-2";
+        clase.className="sidebar_admin";
     }
 }
 function change_attr(){
@@ -82,10 +86,10 @@ function change_attr(){
     var page=window.location.href;
     var ruta=page.split("/");
     var file=ruta[ruta.length-1];
-    if(file !=="home.html" || file !=="home_registered.html" || file!=="admin_users_panel.html"
-    || file!=="admin_comments_panel.html" || file!=="admin_content_panel.html"|| file!=="create_new.html" 
-    || file!=="create_user.html"|| file!=="writer_comments_panel.html" || file !=="writer_content_panel.html" 
-    ||file!=="writer_news_panel.html"){
+    if(file !=="home.html" && file !=="home_registered.html" && file!=="admin_users_panel.html"
+    && file!=="admin_comments_panel.html" && file!=="admin_content_panel.html" && file!=="create_new.html" 
+    && file!=="create_user.html" && file!=="writer_comments_panel.html" && file !=="writer_content_panel.html" 
+    && file!=="writer_news_panel.html"){
         height_bread= document.getElementsByClassName("breadcrumbs_nav")[0].offsetHeight;
     }
 
@@ -122,4 +126,17 @@ function reset(attri, cuerpo, footer){
     attri[0].style.height="auto";
     cuerpo[0].style.paddingBottom="0%";
     footer[0].style.position="relative";
+}
+function deleteClassRow(){
+    var clase=document.getElementsByClassName("contain_row");
+    var page=window.location.href;
+    var ruta=page.split("/");
+    var file=ruta[ruta.length-1].toLowerCase();
+    var width=window.innerWidth;
+
+    if((file==="create_user.html"||file==="signup.html") && (width <=767 && width >=576)){
+        clase[0].className="contain_row";
+    }else{
+        clase[0].className="contain_row row";
+    }
 }
