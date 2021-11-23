@@ -12,7 +12,6 @@ window.addEventListener("resize", function(){
     deleteClassRow();
 });
 
-
 /*----Botón hamburguesa- Mobile ---*/
 function link(){
     /* buscador-input*/
@@ -71,6 +70,7 @@ function change_sidebar(){
         clase.className="sidebar_admin";
     }
 }
+/*Método que cambiar el footer */
 function change_attr(){
     var attri=document.getElementsByClassName("contain_row");
     var cuerpo=document.getElementsByClassName("cuerpo");
@@ -120,21 +120,21 @@ function change_attr(){
         cuerpo[0].style.paddingBottom="5%";
         footer[0].style.position="relative";
     }
-   /* console.log("height:"+ height + ", height_body"+ height_body + ", width"+ width_new + ", width_body" + window.width_old);*/
 }
+/*Método auxiliar que resetea los estilos para el footer */
 function reset(attri, cuerpo, footer){
     attri[0].style.height="auto";
     cuerpo[0].style.paddingBottom="0%";
     footer[0].style.position="relative";
 }
+/*Método que adapta las páginas de crear usuario, de registrarse y de perfil versión pc a tabler e móvil*/
 function deleteClassRow(){
     var clase=document.getElementsByClassName("contain_row");
     var page=window.location.href;
     var ruta=page.split("/");
     var file=ruta[ruta.length-1].toLowerCase();
     var width=window.innerWidth;
-
-    if((file==="create_user.html"||file==="signup.html") && (width <=767 && width >=576)){
+    if((file==="create_user.html"||file==="signup.html" || file==="profile.html") && (width <=767 && width >=576)){
         clase[0].className="contain_row";
     }else{
         clase[0].className="contain_row row";
