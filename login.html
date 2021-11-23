@@ -10,6 +10,8 @@
         <link rel="stylesheet" type="text/css" href="style/footer_style.css"/>
         <link rel="stylesheet" type="text/css" href ="style/breadcrumbs_style.css"/>
         <script src="script.js"></script>
+         <!--<script src="scripts/script.js"></script>
+        <script src="scripts/form_validation.js"></script>-->
     </head>
     <body>
         <header class="headers">
@@ -19,13 +21,13 @@
                 </button>
                 <div class="link_normal navbar-nav">
                     <a class="logo_link navbar-brand" href="home_registered.html"><img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png"></a>            
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html">Futbol</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html">Baloncesto</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html">Tenis</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html">Ciclismo</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html">Motor</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html">eSports</a>
-                    <a class="header_links nav-link nav-item" href="contact_registered.html">Contacto</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Futbol</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Baloncesto</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Tenis</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Ciclismo</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Motor</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">eSports</a>
+                    <a class="header_links nav-link nav-item" href="contact_registered.html?">Contacto</a>
                 </div>
             </nav>
             <nav class="link_mobile navbar-nav navbar-collapse collapse" id="navbarCollapse">
@@ -45,20 +47,22 @@
         <header class="mobile_bread breadcrumbs_nav">
             <h2 class="sub_headers_title">Iniciar Sesi&oacute;n</h2>
         </header>
-        <section id="section_login">
-            <form id="login" method="POST">
-                <div id="logo_login"><a href="home.html"><img id="logo" src="img/logo.png" alt="Logo" title="Company Logo" /></a></div>
-                <div class="mb-3 mt-3">
-                    <label for="user" class="form-label label_login">Usuario:</label>
-                    <input id="email" class="input_login form-control" type="text" placeholder="Enter email"required />
-                 </div>
-                <div class="mb-1">
-                    <label for="key" class="form-label label_login">Contrase&ntilde;a:</label>
-                    <input id="key" class="input_login form-control" type="password"  placeholder="Enter password" required/>
-                </div>
-                <label id="label_sign">¿No tienes una cuenta?&nbsp;<a id="sign_new" class="forgot-password-link" href="">Registrarse</a></label>
-                <input class="button_login" type="submit" value="Iniciar Sesi&oacute;n"/>
-            </form>
+        <section id="section_login" class="contain_row">
+            <div class="cuerpo">
+                <form id="login" class="align-items-center"method="POST">
+                    <div id="logo_login"><a href="home.html"><img id="logo" src="img/logo.png" alt="Logo" title="Company Logo" /></a></div>
+                    <div class="mb-3 mt-3 col-sm-10">
+                        <label for="user" class="form-label label_login">Usuario:</label>
+                        <input id="email" class="input_login form-control" type="text" placeholder="Enter email"required />
+                    </div>
+                    <div class="mb-1 col-sm-10">
+                        <label for="key" class="form-label label_login">Contrase&ntilde;a:</label>
+                        <input id="key" class="input_login form-control" type="password"  placeholder="Enter password" required/>
+                    </div>
+                    <label id="label_sign">¿No tienes una cuenta?&nbsp;<a id="sign_new" class="forgot-password-link" href="">Registrarse</a></label>
+                    <input class="button_login" type="submit" value="Iniciar Sesi&oacute;n"/>
+                </form>
+            </div>
         </section>
         <footer class="footers">
             <div class="content container">
