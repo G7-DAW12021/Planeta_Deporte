@@ -83,6 +83,11 @@
     .breadcrumbs_links, .browser_text{
         font-size: large;
     }
+    .input_brdc_pc {
+        border: none;
+        background: none;
+        /*margin-left: 0.1%;*/
+    }
     /*Nombre: Buscador*/
     .browser_text {
         color: white;
@@ -98,8 +103,16 @@
 /*Media Query para Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     /*Ocultar versión PC*/
-    .pc_bread, .sub_headers {
+    .pc_bread, .sub_headers, .browser_title, .search_text{
         display: none;
+    }
+    /*Nombre del título de la noticia*/
+    .new_breadcrumb{
+        display: inline-block;
+        border: none;
+        background: none;
+        font-size: medium;
+        margin-left: 0.1%;
     }
     /*Mostrar versión*/
     .mobile_bread {
@@ -115,7 +128,7 @@
 /*Media Query para Movil*/
 @media only screen and (max-width: 767px) {
     /*Ocultar versión PC*/
-    .pc_bread,.sub_headers, .sub_header_mobile {
+    .pc_bread,.sub_headers, .sub_header_mobile, .browser_input, .browser_text {
         display: none;
     }
     /*Mostrar versión*/
