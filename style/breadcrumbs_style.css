@@ -27,14 +27,23 @@
     display: inline-block;
     font-size: medium;
 }
+
+/*Input del buscador*/
+.browser_input {
+    background: #C4C4C4;
+    border-radius: 30px;
+    text-align: center;
+    padding: 0.4% 5% 0.4% 5%; 
+    color: black;  
+}
 /*Tablet y Móvil: Nombre de la pagina(Buscador)*/
-.browser_title {
+.browser_title, .browser_text {
     display: inline-block;
     color: white;
     margin-bottom: 0%;
 }
 /*Tablet y Móvil: palabras del buscador(Buscador)*/
-.search_text {
+.search_text, .browser_input {
     display: inline-block;
     color: white;
     font-size: small;
@@ -86,18 +95,6 @@
     .input_brdc_pc {
         border: none;
         background: none;
-        /*margin-left: 0.1%;*/
-    }
-    /*Nombre: Buscador*/
-    .browser_text {
-        color: white;
-    }
-    /*Input del buscador*/
-    .browser_input {
-        background: #C4C4C4;
-        border-radius: 30px;
-        text-align: center;
-        padding: 0.4% 5% 0.4% 5%;   
     }
 }
 /*Media Query para Tablet*/
@@ -120,8 +117,9 @@
         padding: 1.5% 0%;
     }
     /*Tablet y Móvil: Nombre de la pagina(Buscador)*/
-    .browser_title, .search_text{
+    .browser_text, .browser_input{
         font-size: medium;
+        margin-left: 1%;
     }
 
 }
