@@ -4,7 +4,6 @@ var height_old =0;
 function call_method(){
     change_sidebar();
     link();
-    change_attr();
     deleteClassRow();
 }
 window.addEventListener("resize", function(){
@@ -33,7 +32,7 @@ function link(){
     var name=["Futbol", "Baloncesto", "Tenis", "Ciclismo", "Motor", "eSports"];
     for(let i=0; i<name.length; i++){
         var node = document.createElement("a");
-        node.href="sport_section_registered.html?section=" + name[i].toLowerCase();
+        node.href= change_user() + name[i].toLowerCase();
         node.className="nav-link nav-item header_links";
         node.text=name[i];
         document.getElementsByClassName("link_mobile")[0].append(node);
@@ -46,16 +45,36 @@ function link(){
     document.getElementsByClassName("link_mobile")[0].append(a);
 
 }
+
+function change_user(){
+    var rol="sport_section_registered.html";
+    var page=window.location.href;
+    var ruta=page.split("/");
+    var url=ruta[ruta.length-1];
+    var file= url.split("?");
+    file=file[0];
+    if(file === "contact.html"||file === "signup.html"||file === "home.html"||file === "sport_section.html"||
+       file === "login.html"||file === "new.html"||file === "filtered_news.html"){
+        rol="sport_section.html";
+    }
+    rol+="?section=";
+    return rol;
+}
+
+
 /*Método: Cambiar de dirección URL de contacto dependiendo donde se encuentra*/
 function change_Contact(){
     var clase="contact_registered.html";
     var page=window.location.href;
     var ruta=page.split("/");
     var file=ruta[ruta.length-1];
-    if(file === "contact.html"||file === "signup.html"||file === "home.html"||file === "sport_section.html"||
-       file === "login.html"||file === "new.html"||file === "filtered_news.html"){
-        clase="contact.html";
+    if(file === "contact.html"||file === "signup.html"||file === "home.html"||
+       file === "login.html"||file === "new.html"){
+        return "contact.html";
+    } else if(file.split("?")[0] === "sport_section.html" || file.split("?")[0] === "filtered_news.html"){
+        return"contact.html";
     }
+
     return clase;
 }
 /*Método: Cambiar el nombre de la clase dependiendo donde se encuentra*/
@@ -67,7 +86,7 @@ function change_sidebar(){
     if(file === "admin_users_panel.html"||file === "admin_comments_panel.html"||file === "admin_content_panel.html"||
     file === "new_registered.html"|| file === "writer_comments_panel.html"||file === "writer_content_panel.html"||
     file === "writer_create_news.html" || file ==="create_news.html" || file==="create_user.html"){
-        clase.className="sidebar_admin";
+        clase.className="sidebar_admin col-sm-2";
     }
 }
 /*Método que cambiar el footer */
@@ -140,3 +159,5 @@ function deleteClassRow(){
         clase[0].className="contain_row row";
     }
 }
+
+
