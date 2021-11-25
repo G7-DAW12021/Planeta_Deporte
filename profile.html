@@ -27,16 +27,16 @@
                 </div>
                 <div class="link_normal navbar-nav">
                     <a class="logo_link navbar-brand" href="home_registered.html"><img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png"></a>            
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Futbol</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Baloncesto</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Tenis</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Ciclismo</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">Motor</a>
-                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?">eSports</a>
-                    <a class="header_links nav-link nav-item" href="contact_registered.html?">Contacto</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=futbol">Futbol</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=baloncesto">Baloncesto</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=tenis">Tenis</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=ciclismo">Ciclismo</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=motor">Motor</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=esports">eSports</a>
+                    <a class="header_links nav-link nav-item" href="contact_registered.html">Contacto</a>
                 </div>
                 <div class="div_user ms-auto">
-                    <a class="login_register_btn navbar-brand" id="btn_login_out"href="">Cerrar Sesi&oacute;n</a>
+                    <a class="login_register_btn navbar-brand" id="btn_login_out"href="login.html">Cerrar Sesi&oacute;n</a>
                     <a class="profile_link" href="profile.html"><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile.png"></a>
                 </div>
             </nav>
@@ -45,7 +45,7 @@
             </nav>
         </header>
         <header class="mobile_bread breadcrumbs_nav">
-            <h2 class="sub_headers_title">Contacto</h2>
+            <h2 class="sub_headers_title">Perfil</h2>
             <div class="div_dropdown dropdown">
                 <button class="btn_menu btn dropdown-toggle " type="button" data-bs-toggle="dropdown">
                   Menú
@@ -54,7 +54,7 @@
                     <div class="mobile_sidebar_list "><img class="img_icon" title="Home" alt="Home" src="img/home_mobile.png">
                         <a class="sidebar_link dropdown-item" href="home_registered.html">Home</a>
                         <img class="img_icon" title="Panel" alt="Panel" src="img/panel_mobile.png">
-                        <a class="sidebar_link dropdown-item" href="admin_user_content.html">Panel</a>
+                        <a class="sidebar_link dropdown-item" href="admin_content_panel.html">Panel</a>
                     </div>
             </div>
             </div>
@@ -65,14 +65,14 @@
                     <nav class="sidebar col-sm-2" id="side">
                         <ul class="nav_list">
                             <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/home.png">
-                                <a class="sidebar_links" href="">Home</a>
+                                <a class="sidebar_links" href="home_registered.html">Home</a>
                             </li>
                             <li class="nav_items"><img class="sidebar_logos" title="Panel" alt="Panel" src="img/panel.png">
-                                <a class="sidebar_links" href="">Panel</a>
+                                <a class="sidebar_links" href="admin_content_panel.html">Panel</a>
                             </li>
                         </ul>
                     </nav>
-                    <section class="section_profile cuerpo col-sm-10">
+                    <section class="section_profile cuerpo content_form col-sm-10">
                         <div class="contain_row row">
                             <div class ="photo_profile col-sm-4">
                                 <img class="profile_img change_photo" title="Profile" alt="Profile" src="img/changephoto.png"><br/>
@@ -99,7 +99,7 @@
                                     <input class="input_text col-sm-4" id="last_name_profile" type="text" 
                                         pattern="[A-Za-z&aacute;&eacute;&iacute;&oacute;&uacute;&Aacute;&Eacute;&Iacute;&Oacute;&Uacute;&ntilde;&Ntilde;\s]{1,}" 
                                         placeholder="Apellidos"required/>
-                                    <button class="button_edit" type="button"><img title="Edit" alt="Panel" src="img/edit.png"></button>
+                                    <button class="button_edit" type="button"><img class="edit_delete" title="Edit" alt="Panel" src="img/edit.png"></button>
                                     <button class="button_ok" type="button"><img class="edit_delete" title="ok" alt="Panel" src="img/ok.png"></button>
                                 </div>
                                 <div class="mb-1 row">
@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="mb-1 row">
                                     <input type="email" class="input_text col-sm-4" id="email_profile" placeholder="name@example.com" required>
-                                    <button class="button_edit" type="button"><img title="Edit" alt="Panel" src="img/edit.png"></button>
+                                    <button class="button_edit" type="button"><img class="edit_delete" title="Edit" alt="Panel" src="img/edit.png"></button>
                                     <button class="button_ok" type="button"><img class="edit_delete" title="ok" alt="Panel" src="img/ok.png"></button>
                                 </div>
                                 <div class="mb-1 row">
@@ -115,7 +115,7 @@
                                 </div>
                                 <div class="mb-1 row">
                                     <input type="password" class="input_text col-sm-4 form-control" id="password_profile"placeholder="Cambiar contrase&ntilde;a" required>
-                                    <button class="button_edit" type="button"><img title="Edit" alt="Panel" src="img/edit.png"></button>
+                                    <button class="button_edit" type="button"><img class="edit_delete" title="Edit" alt="Panel" src="img/edit.png"></button>
                                     <button class="button_ok" type="button"><img class="edit_delete" title="ok" alt="Panel" src="img/ok.png"></button>
                                 </div>
                             </form>
